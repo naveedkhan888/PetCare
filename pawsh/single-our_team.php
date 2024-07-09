@@ -2,7 +2,7 @@
 $fb = get_post_meta(get_the_ID(), 'social_profile_facebook_link', true);
 $twitter = get_post_meta(get_the_ID(), 'social_profile_twitter_link', true);
 $instagram = get_post_meta(get_the_ID(), 'social_profile_instagram_link', true);?>
-<div id="primary" class="content-area pawsh-page-containerr pawsh-single-details teams-single-detail-page">
+<div id="primary" class="content-area petsone-page-containerr petsone-single-details teams-single-detail-page">
 		<main id="main" class="site-main">
             <div class="container">
                 <div class="row">

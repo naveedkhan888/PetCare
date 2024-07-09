@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /*!
-Theme Name: Pawsh Theme
-Theme URI: http://designingmedia.com/pawsh
+Theme Name: Petsone Theme
+Theme URI: http://designingmedia.com/petsone
 Author: Designing Media
 Author URI: http://designingmedia.com
-Description: Elevate your pet care business with Pawsh Theme – the ultimate solution for seamless productivity. Empower your operations with top-tier independent professionals working remotely. Streamline tasks, boost efficiency, and thrive in the digital landscape. Leverage the expertise of virtual assistants at your fingertips. Maximize success, minimize effort – Pawsh, where virtual assistance meets instant results.
+Description: Elevate your pet care business with Petsone Theme – the ultimate solution for seamless productivity. Empower your operations with top-tier independent professionals working remotely. Streamline tasks, boost efficiency, and thrive in the digital landscape. Leverage the expertise of virtual assistants at your fingertips. Maximize success, minimize effort – Petsone, where virtual assistance meets instant results.
 Version: 1.0
 Requires PHP: 7.0
 Tested up to: 5.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: pawsh
+Text Domain: petsone
 Tags: Pet Care Theme, Pet Grooming, Pet Services, Responsive Design, SEO Friendly, Modern Interface, Digital Solutions, Virtual Assistants, Business Productivity, Instant Results, Task Automation, Customer Support, Time Management, Professional Services, Remote Work Solutions, Remote Support, Independent Professionals, Virtual Workspace, Global Workforce, Smart Business Solutions
 */
 
@@ -2138,7 +2138,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      opacity: 1;
      bottom: 0px;
 }
- #pawsh_main_menu .sub-menu li:hover a{
+ #petsone_main_menu .sub-menu li:hover a{
     color: var(--e-global-color-primary);
  }
 .navbar-area.style-2 .nav-container .navbar-collapse .navbar-nav li:hover a,
@@ -3073,7 +3073,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      transition: 0.3s ease;
      color: #c8c8c8;
 }
- .pawsh-blog-details .gallery-item img{
+ .petsone-blog-details .gallery-item img{
      margin-bottom: 15px;
 }
  .widget_tag_cloud .tagcloud {
@@ -3969,7 +3969,7 @@ ul.page-numbers li .current{
      resize: none;
      border-radius: 6px !important;
 }
- .comment-submit-pawsh {
+ .comment-submit-petsone {
      width: 175px;
      height: 52px;
 	 line-height: 52px;
@@ -3987,7 +3987,7 @@ ul.page-numbers li .current{
      color: var(--e-global-color-white);
      margin-top: 15px;
 }
- .comment-submit-pawsh:hover {
+ .comment-submit-petsone:hover {
      background-color: var(--e-global-color-primary);
      color: var(--e-global-color-white);
 }
@@ -4910,14 +4910,14 @@ button.search-submit:hover {
      margin-bottom: 30px;
      font-weight: 700;
 }
- .pawsh-blog-details .gallery-item img {
+ .petsone-blog-details .gallery-item img {
      margin-bottom: 15px;
      padding: 0 5px;
 }
- .pawsh-blog-details .gallery-item img:first-child {
+ .petsone-blog-details .gallery-item img:first-child {
      padding-left: 0;
 }
- .pawsh-blog-details .gallery-item img:last-child {
+ .petsone-blog-details .gallery-item img:last-child {
      padding-right: 0;
 }
  blockquote {
@@ -5074,7 +5074,7 @@ button.search-submit:hover {
      transform: scale3d(1.1, 1.1, 1.1);
      border-radius: 5px;
 }
- .widget.widget_media_gallery .gallery, .widget.widget-2.widget_rss ul li:last-child, .calendar_wrap table, .pawsh-blog-details .gallery-item img {
+ .widget.widget_media_gallery .gallery, .widget.widget-2.widget_rss ul li:last-child, .calendar_wrap table, .petsone-blog-details .gallery-item img {
      margin-bottom: 0px !important;
 }
  .page-title-area:after {
@@ -5181,17 +5181,17 @@ button.search-submit:hover {
 .wp-block-heading{
     color: var(--e-global-color-primary);
 }
- .content-area.pawsh-page-containerr  {
+ .content-area.petsone-page-containerr  {
     padding: 120px 0px 0px 0px;
 }
  .comments-area .reply-title, .comments-area .comment-reply-title {
      margin-bottom: 20px;
      margin-top: 30px;
 }
-.pawsh-page-containerr h1, .pawsh-page-containerr h1, .pawsh-page-containerr h3, .pawsh-page-containerr h4, .pawsh-page-containerr h5, .pawsh-page-containerr h6{
+.petsone-page-containerr h1, .petsone-page-containerr h1, .petsone-page-containerr h3, .petsone-page-containerr h4, .petsone-page-containerr h5, .petsone-page-containerr h6{
     color: var(--e-global-color-primary) !important;
 }
- .pawsh-page-containerr .entry-content a:hover, p.logged-in-as a:hover {
+ .petsone-page-containerr .entry-content a:hover, p.logged-in-as a:hover {
      box-shadow: none;
      color: var(--e-global-color-accent) 
 }
@@ -5758,12 +5758,12 @@ footer.footer-area.style-3 .footer-bottom p:before {
 .blog-item .slick-slide img {
     display: block !important;
 }
-.pawsh-blog-page .wp-block-tag-cloud a{
+.petsone-blog-page .wp-block-tag-cloud a{
     font-size: 12px !important;
     padding: 5px !important;
     border: 1px solid !important;
 }
-.pawsh-blog-page .wp-block-tag-cloud a:hover{
+.petsone-blog-page .wp-block-tag-cloud a:hover{
     color: var(--e-global-color-primary) !important;
 }
 .single .wp-block-tag-cloud a{
@@ -5771,7 +5771,7 @@ footer.footer-area.style-3 .footer-bottom p:before {
     padding: 2px !important;
     border: 1px solid !important;
 }
-.pawsh-blog-details .form-submit input{
+.petsone-blog-details .form-submit input{
     color: var(--e-global-color-white) !important;
     background-color: var(--e-global-color-accent ) !important;
     padding: 0px !important;
@@ -5835,29 +5835,29 @@ footer.footer-area.style-3 .footer-bottom p:before {
     color: var(--e-global-color-accent);
     background: transparent;
 }
-.pawsh-services-details .featured-image{
+.petsone-services-details .featured-image{
     text-align: center !important;
     height: 500px; 
     overflow: hidden; 
     border-radius: 0px;
     margin-bottom: 30px;
 }
-.pawsh-services-details .featured-image img{
+.petsone-services-details .featured-image img{
     border-radius: 0px;
     min-width: 100%;
 }
-.pawsh-services-details p{
+.petsone-services-details p{
     text-align: justify;
 }
-.pawsh-services-details h1,.pawsh-services-details h2,.pawsh-services-details h3,.pawsh-services-details h4,.pawsh-services-details h5,.pawsh-services-details h6, .pawsh-page-containerr strong{
+.petsone-services-details h1,.petsone-services-details h2,.petsone-services-details h3,.petsone-services-details h4,.petsone-services-details h5,.petsone-services-details h6, .petsone-page-containerr strong{
     color: var(--e-global-color-primary);
 }
-.pawsh-services-details ul li{
+.petsone-services-details ul li{
     font-size: 16px;
     padding-bottom: 5px;
     padding-left: 10px;
 }
-.pawsh-services-details ul li::marker{
+.petsone-services-details ul li::marker{
     color: var(--e-global-color-accent) !important;
     font-size: 20px !important;
     content: "\f058";
@@ -6236,10 +6236,10 @@ footer.footer-area.style-3 .footer-bottom p:before {
     margin-top: 10px;
     margin-right: 10px;
 }
-.single-product .pawsh-page-containerr .col-lg-4.sidebar-blog.right-side{
+.single-product .petsone-page-containerr .col-lg-4.sidebar-blog.right-side{
     display: none;;
 }
-.single-product .pawsh-page-containerr  .col-lg-8{
+.single-product .petsone-page-containerr  .col-lg-8{
     max-width: 100%;
     flex: auto;
 }
@@ -6560,7 +6560,7 @@ td#today {
     display: none !important;
 }
 
-body .expand_close #pawsh_main_menu.show {
+body .expand_close #petsone_main_menu.show {
     display: block;
 }
 
@@ -6613,7 +6613,7 @@ blockquote {
   
 /*Cart Page and Checkout Page*/
 
-.woocommerce-cart .pawsh-page-containerr{
+.woocommerce-cart .petsone-page-containerr{
     color: var(--e-global-color-primary) !important;
 }
 .woocommerce-cart .wc-block-components-sidebar-layout {
@@ -6625,7 +6625,7 @@ blockquote {
 .woocommerce-cart .wc-block-components-button:not(.is-link){
     border-radius: 6px !important;
 }
-.woocommerce-checkout .pawsh-page-containerr{
+.woocommerce-checkout .petsone-page-containerr{
     color: var(--e-global-color-primary) !important;
 }
 .woocommerce-checkout .wc-block-components-sidebar-layout {
@@ -7098,10 +7098,10 @@ blockquote {
    .page-title-area {
        padding: 130px 0 90px;
     }
-    .content-area.pawsh-page-containerr {
+    .content-area.petsone-page-containerr {
         padding: 100px 0 0px 0;
     }
-    .pawsh-services-details .featured-image {
+    .petsone-services-details .featured-image {
         height: 461px;
     }
     .woocommerce div.product div.images img {
@@ -7278,7 +7278,7 @@ blockquote {
    .blog-details-area .blog-details-inner .st-blog-content-detils {
        padding: 15px 0px !important;
    }
-   .pawsh-services-details .featured-image{
+   .petsone-services-details .featured-image{
        height: 219px !important;
    }
    .blog-details-area .blog-details-content .date span {
@@ -7313,11 +7313,11 @@ blockquote {
     .single-input-wrap-2 textarea.single-input {
         text-align: center;
    }
-   .content-area.pawsh-page-containerr {
+   .content-area.petsone-page-containerr {
         padding: 60px 0 0px 0;
         margin: 0px 15px;
     }
-    .woocommerce-page .content-area.pawsh-page-containerr {
+    .woocommerce-page .content-area.petsone-page-containerr {
         margin: 0px 15px;
     }
      .single-blog-wrap .blog-details p {
@@ -7332,7 +7332,7 @@ blockquote {
     .single-blog-wrap .blog-details .read-more-btn {
          font-size: 14px;
     }
-    .pawsh-page-containerr .entry-content a, p.logged-in-as a {
+    .petsone-page-containerr .entry-content a, p.logged-in-as a {
          font-size: 14px;
     }
     .post-navigation h4, .post-navigation h4 a {
@@ -7388,7 +7388,7 @@ blockquote {
      .search-popup .search-form button {
          padding: 20px 20px;
     }
-    .pawsh-services-details .featured-image{
+    .petsone-services-details .featured-image{
         height: 219px !important;
     }
 

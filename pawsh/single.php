@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package pawsh
+ * @package petsone
  */
 $blog_column = is_active_sidebar( 'right-sidebar' ) ? 8 : 12 ;
 get_header();
 ?>
-	<div id="primary" class="content-area pawsh-page-containerr pawsh-blog-details">
+	<div id="primary" class="content-area petsone-page-containerr petsone-blog-details">
 		<main id="main" class="site-main">
 		 	<div class="blog-details-area">
 		 		<div class="container">

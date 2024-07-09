@@ -1,15 +1,15 @@
 <?php
 /**
  * Custom Comment Area Modification
- * @package pawsh
+ * @package petsone
  * @since 1.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists( 'pawsh_comment_modification' ) ) {
-	function pawsh_comment_modification($comment, $args, $depth) {
+if ( ! function_exists( 'petsone_comment_modification' ) ) {
+	function petsone_comment_modification($comment, $args, $depth) {
 		$GLOBALS['comment'] = $comment;
 		extract($args, EXTR_SKIP);
 		if ( 'div' == $args['style'] ) {
@@ -45,7 +45,7 @@ if ( ! function_exists( 'pawsh_comment_modification' ) ) {
 				<h6><?php printf( '%s', get_comment_author() ); ?></h6>
 				<span><?php printf('<span class="comments-meta">%s</span>',get_comment_date());?></span>
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em class="comment-awaiting-moderation"><?php echo esc_html__( 'Your comment is awaiting moderation.', 'pawsh' ); ?></em>
+					<em class="comment-awaiting-moderation"><?php echo esc_html__( 'Your comment is awaiting moderation.', 'petsone' ); ?></em>
 				<?php endif; ?>
 				<div class="comment-content">
 					<?php comment_text(); ?>

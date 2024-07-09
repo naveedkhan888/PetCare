@@ -2,37 +2,37 @@
 /**
  * Custom template tags for this theme
  * Eventually, some of the functionality here could be replaced by core features.
- * @package pawsh
+ * @package petsone
 */
 
-//pawsh_header_social_profiles
-function pawsh_header_social_profiles() {
-    $pawsh_topbar_fb_url             = get_theme_mod('pawsh_topbar_fb_url', '#');
-    $pawsh_topbar_twitter_url       = get_theme_mod('pawsh_topbar_twitter_url', '#');
-    $pawsh_topbar_linkedin_url      = get_theme_mod('pawsh_topbar_linkedin_url', '#');
-    $pawsh_topbar_instagram_url        = get_theme_mod('pawsh_topbar_instagram_url', '#');
-    $enable_header_social_profile        = get_theme_mod('pawsh_show_social_profiles');
+//petsone_header_social_profiles
+function petsone_header_social_profiles() {
+    $petsone_topbar_fb_url             = get_theme_mod('petsone_topbar_fb_url', '#');
+    $petsone_topbar_twitter_url       = get_theme_mod('petsone_topbar_twitter_url', '#');
+    $petsone_topbar_linkedin_url      = get_theme_mod('petsone_topbar_linkedin_url', '#');
+    $petsone_topbar_instagram_url        = get_theme_mod('petsone_topbar_instagram_url', '#');
+    $enable_header_social_profile        = get_theme_mod('petsone_show_social_profiles');
     if( $enable_header_social_profile  == true ):
-        if ($pawsh_topbar_fb_url != '#'): ?>
+        if ($petsone_topbar_fb_url != '#'): ?>
             <li class="topbar-single-info topbar-social-icon">
-                <a href="<?php print esc_url($pawsh_topbar_fb_url); ?>"><i class="fa fa-facebook"></i></a>
+                <a href="<?php print esc_url($petsone_topbar_fb_url); ?>"><i class="fa fa-facebook"></i></a>
             </li>
         <?php endif; 
-        if ($pawsh_topbar_twitter_url != '#'): ?>
+        if ($petsone_topbar_twitter_url != '#'): ?>
             <li class="topbar-single-info topbar-social-icon">
-                <a href="<?php print esc_url($pawsh_topbar_twitter_url); ?>"><i class="fa fa-twitter"></i></a>
+                <a href="<?php print esc_url($petsone_topbar_twitter_url); ?>"><i class="fa fa-twitter"></i></a>
             </li>
         <?php 
         endif; 
-        if ($pawsh_topbar_linkedin_url != '#'): ?>
+        if ($petsone_topbar_linkedin_url != '#'): ?>
             <li class="topbar-single-info topbar-social-icon">
-                <a href="<?php print esc_url($pawsh_topbar_instagram_url); ?>"><i class="fa fa-linkedin"></i></a>
+                <a href="<?php print esc_url($petsone_topbar_instagram_url); ?>"><i class="fa fa-linkedin"></i></a>
             </li>
         <?php 
         endif; 
-        if ($pawsh_topbar_instagram_url != '#'): ?>
+        if ($petsone_topbar_instagram_url != '#'): ?>
             <li class="topbar-single-info topbar-social-icon">
-                <a href="<?php print esc_url($pawsh_topbar_instagram_url); ?>"><i class="fa fa-instagram"></i></a>
+                <a href="<?php print esc_url($petsone_topbar_instagram_url); ?>"><i class="fa fa-instagram"></i></a>
             </li>
         <?php 
         endif; 
@@ -41,16 +41,16 @@ function pawsh_header_social_profiles() {
 
 
 //investion login
-function pawsh_user_login(){
+function petsone_user_login(){
      // header button
-    $enable_header_btn = get_theme_mod('pawsh_show_header_btn');
-    $enable_header_btn_text = get_theme_mod('pawsh_header_btn_text', esc_html__('Sign in', 'pawsh'));
-    $enable_header_btn_icon = get_theme_mod('pawsh_header_btn_icon', esc_html__('fa fa-user-o', 'pawsh'));  
+    $enable_header_btn = get_theme_mod('petsone_show_header_btn');
+    $enable_header_btn_text = get_theme_mod('petsone_header_btn_text', esc_html__('Sign in', 'petsone'));
+    $enable_header_btn_icon = get_theme_mod('petsone_header_btn_icon', esc_html__('fa fa-user-o', 'petsone'));  
     if( $enable_header_btn == true ): ?>
         <?php     
         if (is_user_logged_in()) : ?>
             <li class="topbar-single-info topbar-signin sign-nav ml-3 ml-lg-0">
-                <a href="<?php echo wp_logout_url() ?>"><i class="<?php echo esc_attr( $enable_header_btn_icon ); ?>"></i> <?php echo esc_html('Log Out', 'pawsh'); ?></a>
+                <a href="<?php echo wp_logout_url() ?>"><i class="<?php echo esc_attr( $enable_header_btn_icon ); ?>"></i> <?php echo esc_html('Log Out', 'petsone'); ?></a>
             </li>
         <?php
         else : ?>
@@ -64,39 +64,39 @@ function pawsh_user_login(){
 }
 
 
-// pawsh header logo
-function pawsh_header_logo() {
+// petsone header logo
+function petsone_header_logo() {
     ?>
     <?php 
-    $pawsh_logo_on = get_post_meta(get_the_ID(), 'pawsh_enable_sec_logo', true);
-    $pawsh_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
-    $pawsh_logo_white = get_template_directory_uri() . '/assets/img/logo/logo-white.png';
-    $pawsh_retina_logo = get_template_directory_uri().'/assets/img/logo/logo@2x.png';
-    $pawsh_retina_logo_white = get_template_directory_uri().'/assets/img/logo/logo-white@2x.png';
-    $pawsh_retina_logo  = get_theme_mod('retina_logo',$pawsh_retina_logo);
-    $pawsh_retina_logo_white  = get_theme_mod('retina_secondary_logo',$pawsh_retina_logo_white);
-    $pawsh_site_logo = get_theme_mod('logo', $pawsh_logo);
-    $pawsh_secondary_logo = get_theme_mod('seconday_logo', $pawsh_logo_white);
+    $petsone_logo_on = get_post_meta(get_the_ID(), 'petsone_enable_sec_logo', true);
+    $petsone_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
+    $petsone_logo_white = get_template_directory_uri() . '/assets/img/logo/logo-white.png';
+    $petsone_retina_logo = get_template_directory_uri().'/assets/img/logo/logo@2x.png';
+    $petsone_retina_logo_white = get_template_directory_uri().'/assets/img/logo/logo-white@2x.png';
+    $petsone_retina_logo  = get_theme_mod('retina_logo',$petsone_retina_logo);
+    $petsone_retina_logo_white  = get_theme_mod('retina_secondary_logo',$petsone_retina_logo_white);
+    $petsone_site_logo = get_theme_mod('logo', $petsone_logo);
+    $petsone_secondary_logo = get_theme_mod('seconday_logo', $petsone_logo_white);
     ?>
      <?php
     if( has_custom_logo()){
         the_custom_logo();
     }else{
-        if($pawsh_logo_on === 'on') { ?>
+        if($petsone_logo_on === 'on') { ?>
             <a class="standard-logo" href="<?php print esc_url(home_url('/')); ?>">
-                <img src="<?php print esc_url($pawsh_secondary_logo); ?>" alt="<?php print esc_attr('logo','pawsh'); ?>" />
+                <img src="<?php print esc_url($petsone_secondary_logo); ?>" alt="<?php print esc_attr('logo','petsone'); ?>" />
             </a>
             <a class="retina-logo" href="<?php print esc_url(home_url('/')); ?>">
-                <img src="<?php print esc_url($pawsh_retina_logo_white); ?>" alt="<?php print esc_attr('logo','pawsh'); ?>" />
+                <img src="<?php print esc_url($petsone_retina_logo_white); ?>" alt="<?php print esc_attr('logo','petsone'); ?>" />
             </a>
         <?php 
         }
         else{ ?>
             <a class="standard-logo" href="<?php print esc_url(home_url('/')); ?>">
-                <img src="<?php print esc_url($pawsh_site_logo); ?>" alt="<?php print esc_attr('logo','pawsh'); ?>" />
+                <img src="<?php print esc_url($petsone_site_logo); ?>" alt="<?php print esc_attr('logo','petsone'); ?>" />
             </a>
             <a class="retina-logo" href="<?php print esc_url(home_url('/')); ?>">
-                <img src="<?php print esc_url($pawsh_retina_logo); ?>" alt="<?php print esc_attr('logo','pawsh'); ?>" />
+                <img src="<?php print esc_url($petsone_retina_logo); ?>" alt="<?php print esc_attr('logo','petsone'); ?>" />
             </a>
         <?php 
         }
@@ -106,30 +106,30 @@ function pawsh_header_logo() {
 } 
 
 
-//pawsh breadcrumb
-add_action('pawsh_before_main_content', 'pawsh_check_breadcrumb');
-function pawsh_check_breadcrumb() {
-    $pawsh_breadcrumb_style = get_post_meta( get_the_ID(), 's7template_choice_breadcrumb_style', true );
-    $pawsh_default_breadcrumb_style = get_theme_mod('choose_default_breadcrumb', 'breadcrumb-style-1' );
-    if( $pawsh_breadcrumb_style == 'breadcrumb-style-1' ) {
-        pawsh_breadcrumb_style_1();
+//petsone breadcrumb
+add_action('petsone_before_main_content', 'petsone_check_breadcrumb');
+function petsone_check_breadcrumb() {
+    $petsone_breadcrumb_style = get_post_meta( get_the_ID(), 's7template_choice_breadcrumb_style', true );
+    $petsone_default_breadcrumb_style = get_theme_mod('choose_default_breadcrumb', 'breadcrumb-style-1' );
+    if( $petsone_breadcrumb_style == 'breadcrumb-style-1' ) {
+        petsone_breadcrumb_style_1();
     }
-    elseif( $pawsh_breadcrumb_style == 'breadcrumb-style-2' ) {
-        pawsh_breadcrumb_style_2();
+    elseif( $petsone_breadcrumb_style == 'breadcrumb-style-2' ) {
+        petsone_breadcrumb_style_2();
     }
     else {
-        if($pawsh_default_breadcrumb_style == 'breadcrumb-style-1'){
-            pawsh_breadcrumb_style_1();
-        }elseif($pawsh_default_breadcrumb_style == 'breadcrumb-style-2'){
-            pawsh_breadcrumb_style_2();
+        if($petsone_default_breadcrumb_style == 'breadcrumb-style-1'){
+            petsone_breadcrumb_style_1();
+        }elseif($petsone_default_breadcrumb_style == 'breadcrumb-style-2'){
+            petsone_breadcrumb_style_2();
         }
     }
 }
 
-//pawsh_breadcrumb_style_1
-function pawsh_breadcrumb_style_1() { 
-    $pawsh_invisible_breadcrumb = get_post_meta( get_the_ID(), 's7template_invisible_breadcrumb', true );
-    if( !$pawsh_invisible_breadcrumb ) {
+//petsone_breadcrumb_style_1
+function petsone_breadcrumb_style_1() { 
+    $petsone_invisible_breadcrumb = get_post_meta( get_the_ID(), 's7template_invisible_breadcrumb', true );
+    if( !$petsone_invisible_breadcrumb ) {
         $breadcrumb_img_from_page = get_post_meta(get_the_ID(), 's7template_breadcrumb_bg_img_from_page', true);
         $breadcrumb_color_from_page = get_post_meta(get_the_ID(), 's7template_breadcrumb_bg_color', true);
         $hide_breadcrumb_bg_img = get_post_meta(get_the_ID(), 's7template_hide_breadcrumb_bg_img', true); 
@@ -159,9 +159,9 @@ function pawsh_breadcrumb_style_1() {
             $bg_color = get_theme_mod('breadcrumb_bg_color');
             $bg_color = 'background-color :'.$bg_color.'';    
         }
-        $breadcrumb_blog_title = get_theme_mod('breadcrumb_blog_title', esc_html__('Blog ', 'pawsh'));
-        $breadcrumb_blog_title_details = get_theme_mod('breadcrumb_blog_title_details', esc_html__('Blog Details', 'pawsh'));
-        $pawsh_blog_breadcrumb = get_theme_mod('pawsh_blog_breadcrumb', '');
+        $breadcrumb_blog_title = get_theme_mod('breadcrumb_blog_title', esc_html__('Blog ', 'petsone'));
+        $breadcrumb_blog_title_details = get_theme_mod('breadcrumb_blog_title_details', esc_html__('Blog Details', 'petsone'));
+        $petsone_blog_breadcrumb = get_theme_mod('petsone_blog_breadcrumb', '');
         $featured_img = get_the_post_thumbnail_url(get_the_ID(),'full');
         $getBannerSetting = get_post_meta(get_the_ID(),'_elementor_page_settings', true);
 
@@ -198,7 +198,7 @@ function pawsh_breadcrumb_style_1() {
                         <div class="col-sm-12 text-center">
                             <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h1><?php print esc_html($breadcrumb_blog_title_details); ?></h1>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -211,7 +211,7 @@ function pawsh_breadcrumb_style_1() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3><?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3><?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -238,7 +238,7 @@ function pawsh_breadcrumb_style_1() {
                             <?php 
                             } ?>
                             <ul class="breadcrumb">
-                                <?php pawsh_breadcrumbs(); ?>
+                                <?php petsone_breadcrumbs(); ?>
                             </ul>
                         </div>
 
@@ -257,7 +257,7 @@ function pawsh_breadcrumb_style_1() {
                         <div class="col-sm-12 text-center">
                             <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h1><?php echo get_the_title(); ?></h1>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -270,7 +270,7 @@ function pawsh_breadcrumb_style_1() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -298,7 +298,7 @@ function pawsh_breadcrumb_style_1() {
                          </div>
                          <div class="col-sm-12 text-center">
                              <ul class="breadcrumb">
-                                 <?php pawsh_breadcrumbs(); ?>
+                                 <?php petsone_breadcrumbs(); ?>
                              </ul>
                          </div>
                         </div>
@@ -317,7 +317,7 @@ function pawsh_breadcrumb_style_1() {
                         <div class="col-sm-12 text-center">
                            <?php 
                            if ( is_archive() && 'post' == get_post_type() ) { 
-                               if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                               if ( $petsone_blog_breadcrumb == '' ) { ?>
                                    <h1><?php echo get_the_title(); ?></h1>
                                    <?php
                                $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -330,7 +330,7 @@ function pawsh_breadcrumb_style_1() {
                                <?php 
                                }
                                else { ?>
-                                   <h3><?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                   <h3><?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                    <?php
                                $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                if($meta != '') {
@@ -358,7 +358,7 @@ function pawsh_breadcrumb_style_1() {
                         </div>
                         <div class="col-sm-12 text-center">
                             <ul class="breadcrumb">
-                                <?php pawsh_breadcrumbs(); ?>
+                                <?php petsone_breadcrumbs(); ?>
                             </ul>
                         </div>
                     </div>
@@ -375,7 +375,7 @@ function pawsh_breadcrumb_style_1() {
                         <div class="col-sm-12 text-center">
                            <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h1 class="title"><?php print esc_html($breadcrumb_blog_title_details); ?></h1>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -388,7 +388,7 @@ function pawsh_breadcrumb_style_1() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3 class="title"> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3 class="title"> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -417,7 +417,7 @@ function pawsh_breadcrumb_style_1() {
                         </div>
                         <div class="col-sm-12 text-center">
                              <ul class="breadcrumb">
-                                 <?php pawsh_breadcrumbs(); ?>
+                                 <?php petsone_breadcrumbs(); ?>
                              </ul>
                         </div>
                     </div>
@@ -429,10 +429,10 @@ function pawsh_breadcrumb_style_1() {
 }
 }
 
-//pawsh_breadcrumb_style_2
-function pawsh_breadcrumb_style_2() { 
-    $pawsh_invisible_breadcrumb = get_post_meta( get_the_ID(), 's7template_invisible_breadcrumb', true );
-    if( !$pawsh_invisible_breadcrumb ) {
+//petsone_breadcrumb_style_2
+function petsone_breadcrumb_style_2() { 
+    $petsone_invisible_breadcrumb = get_post_meta( get_the_ID(), 's7template_invisible_breadcrumb', true );
+    if( !$petsone_invisible_breadcrumb ) {
         $breadcrumb_img_from_page = get_post_meta(get_the_ID(), 's7template_breadcrumb_bg_img_from_page', true);
         $breadcrumb_color_from_page = get_post_meta(get_the_ID(), 's7template_breadcrumb_bg_color', true);
         $hide_breadcrumb_bg_img = get_post_meta(get_the_ID(), 's7template_hide_breadcrumb_bg_img', true); 
@@ -461,10 +461,10 @@ function pawsh_breadcrumb_style_2() {
             $bg_color = 'background-color :'.$bg_color.'';    
         }
 
-        $breadcrumb_blog_title = get_theme_mod('breadcrumb_blog_title', esc_html__('Blog ', 'pawsh'));
-        $breadcrumb_blog_title_details = get_theme_mod('breadcrumb_blog_title_details', esc_html__('Blog Details', 'pawsh'));
+        $breadcrumb_blog_title = get_theme_mod('breadcrumb_blog_title', esc_html__('Blog ', 'petsone'));
+        $breadcrumb_blog_title_details = get_theme_mod('breadcrumb_blog_title_details', esc_html__('Blog Details', 'petsone'));
 
-        $pawsh_blog_breadcrumb = get_theme_mod('pawsh_blog_breadcrumb', '');
+        $petsone_blog_breadcrumb = get_theme_mod('petsone_blog_breadcrumb', '');
         $featured_img = get_the_post_thumbnail_url(get_the_ID(),'full');
         if ( is_front_page() && is_home() ) { ?>
 
@@ -500,7 +500,7 @@ function pawsh_breadcrumb_style_2() {
                         <div class="col-sm-12 text-center">
                             <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h1><?php print esc_html($breadcrumb_blog_title_details); ?></h1>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -513,7 +513,7 @@ function pawsh_breadcrumb_style_2() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -539,7 +539,7 @@ function pawsh_breadcrumb_style_2() {
                             <?php 
                             } ?>
                             <ul class="breadcrumb">
-                                <?php pawsh_breadcrumbs(); ?>
+                                <?php petsone_breadcrumbs(); ?>
                             </ul>
                         </div>
 
@@ -557,7 +557,7 @@ function pawsh_breadcrumb_style_2() {
                          <div class="col-sm-12 text-center">
                             <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h3><?php wp_title(''); ?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -570,7 +570,7 @@ function pawsh_breadcrumb_style_2() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -599,7 +599,7 @@ function pawsh_breadcrumb_style_2() {
                          </div>
                          <div class="col-sm-12 text-center">
                              <ul class="breadcrumb">
-                                 <?php pawsh_breadcrumbs(); ?>
+                                 <?php petsone_breadcrumbs(); ?>
                              </ul>
                          </div>
                      </div>
@@ -616,7 +616,7 @@ function pawsh_breadcrumb_style_2() {
                         <div class="col-sm-12 text-center">
                            <?php 
                            if ( is_archive() && 'post' == get_post_type() ) { 
-                               if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                               if ( $petsone_blog_breadcrumb == '' ) { ?>
                                    <h3><?php wp_title(''); ?></h3>
                                    <?php
                                $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -629,7 +629,7 @@ function pawsh_breadcrumb_style_2() {
                                <?php 
                                }
                                else { ?>
-                                   <h3> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                   <h3> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                    <?php
                                $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                if($meta != '') {
@@ -657,7 +657,7 @@ function pawsh_breadcrumb_style_2() {
                         </div>
                         <div class="col-sm-12 text-center">
                             <ul class="breadcrumb">
-                                <?php pawsh_breadcrumbs(); ?>
+                                <?php petsone_breadcrumbs(); ?>
                             </ul>
                         </div>
                     </div>
@@ -674,7 +674,7 @@ function pawsh_breadcrumb_style_2() {
                         <div class="col-sm-12 text-center">
                            <?php 
                             if ( is_single() && 'post' == get_post_type() ) { 
-                                if ( $pawsh_blog_breadcrumb == '' ) { ?>
+                                if ( $petsone_blog_breadcrumb == '' ) { ?>
                                     <h1 class="title"><?php print esc_html($breadcrumb_blog_title_details); ?></h1>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
@@ -687,7 +687,7 @@ function pawsh_breadcrumb_style_2() {
                                 <?php 
                                 }
                                 else { ?>
-                                    <h3 class="title"> <?php print esc_html($pawsh_blog_breadcrumb);?></h3>
+                                    <h3 class="title"> <?php print esc_html($petsone_blog_breadcrumb);?></h3>
                                     <?php
                                 $meta = get_post_meta(get_the_ID(),'dbt_text', true);
                                 if($meta != '') {
@@ -716,7 +716,7 @@ function pawsh_breadcrumb_style_2() {
                         </div>
                         <div class="col-sm-12 text-center">
                              <ul class="breadcrumb">
-                                 <?php pawsh_breadcrumbs(); ?>
+                                 <?php petsone_breadcrumbs(); ?>
                              </ul>
                         </div>
                     </div>
@@ -727,29 +727,29 @@ function pawsh_breadcrumb_style_2() {
     }
 }
 }
-//pawsh_breadcrumbs
-if(!function_exists('pawsh_breadcrumbs')) {
-    function _pawsh_home_callback($home) {
+//petsone_breadcrumbs
+if(!function_exists('petsone_breadcrumbs')) {
+    function _petsone_home_callback($home) {
         return $home;
     }
-    function _pawsh_breadcrumbs_callback($breadcrumbs) {
+    function _petsone_breadcrumbs_callback($breadcrumbs) {
         return $breadcrumbs;
     }
-    function pawsh_breadcrumbs() {
+    function petsone_breadcrumbs() {
         global $post;
-        $breadcrumb_archive = get_theme_mod('breadcrumb_archive', esc_html__('Archive for category ', 'pawsh'));
-        $breadcrumb_search = get_theme_mod('breadcrumb_search', esc_html__('Search results for ', 'pawsh'));
-        $breadcrumb_post_tags = get_theme_mod('breadcrumb_post_tags', esc_html__('Posts tagged ', 'pawsh'));
-        $breadcrumb_artitle_post_by = get_theme_mod('breadcrumb_artitle_post_by', esc_html__('Articles posted by ', 'pawsh'));
-        $breadcrumb_404 = get_theme_mod('breadcrumb_404', esc_html__('Page Not Found ', 'pawsh'));
-        $breadcrumb_page = get_theme_mod('breadcrumb_page', esc_html__('Page ', 'pawsh'));
-        $breadcrumb_shop = get_theme_mod('breadcrumb_shop', esc_html__('Shop ', 'pawsh'));
-        $breadcrumb_home = get_theme_mod('breadcrumb_home', esc_html__('Home ', 'pawsh'));
+        $breadcrumb_archive = get_theme_mod('breadcrumb_archive', esc_html__('Archive for category ', 'petsone'));
+        $breadcrumb_search = get_theme_mod('breadcrumb_search', esc_html__('Search results for ', 'petsone'));
+        $breadcrumb_post_tags = get_theme_mod('breadcrumb_post_tags', esc_html__('Posts tagged ', 'petsone'));
+        $breadcrumb_artitle_post_by = get_theme_mod('breadcrumb_artitle_post_by', esc_html__('Articles posted by ', 'petsone'));
+        $breadcrumb_404 = get_theme_mod('breadcrumb_404', esc_html__('Page Not Found ', 'petsone'));
+        $breadcrumb_page = get_theme_mod('breadcrumb_page', esc_html__('Page ', 'petsone'));
+        $breadcrumb_shop = get_theme_mod('breadcrumb_shop', esc_html__('Shop ', 'petsone'));
+        $breadcrumb_home = get_theme_mod('breadcrumb_home', esc_html__('Home ', 'petsone'));
         $home = '<li class="breadcrumb-list"><a href="'.esc_url(home_url('/')).'" title="'.esc_attr($breadcrumb_home).'">'.esc_html($breadcrumb_home).'</a></li>';
         $showCurrent = 1;               
         $homeLink = esc_url(home_url('/'));
         if ( is_front_page() ) { return; }  // don't display breadcrumbs on the homepage (yet)
-        print _pawsh_home_callback($home);
+        print _petsone_home_callback($home);
         if ( is_category() ) {
             // category section
             $thisCat = get_category(get_query_var('cat'), false);
@@ -837,7 +837,7 @@ if(!function_exists('pawsh_breadcrumbs')) {
             }
             $breadcrumbs = array_reverse($breadcrumbs);
             for ($i = 0; $i < count($breadcrumbs); $i++) {
-                print _pawsh_breadcrumbs_callback($breadcrumbs[$i]);
+                print _petsone_breadcrumbs_callback($breadcrumbs[$i]);
                 if ($i != count($breadcrumbs)-1);
             }
             if ($showCurrent) print '<li class="active">'. get_the_title() .'</li>';
@@ -880,38 +880,38 @@ if(!function_exists('pawsh_breadcrumbs')) {
 }
 
 
-//pawsh footer
-add_action('pawsh_footer_style', 'pawsh_check_footer', 10);
-function pawsh_check_footer() {
-    $pawsh_footer_style = get_post_meta( get_the_ID(), 's7template_choice_footer_style', true );
-    $pawsh_default_footer_style = get_theme_mod('choose_default_footer', 'footer-style-1' );
-    if( $pawsh_footer_style == 'footer-style-1' ) {
-        pawsh_footer_style_1();
+//petsone footer
+add_action('petsone_footer_style', 'petsone_check_footer', 10);
+function petsone_check_footer() {
+    $petsone_footer_style = get_post_meta( get_the_ID(), 's7template_choice_footer_style', true );
+    $petsone_default_footer_style = get_theme_mod('choose_default_footer', 'footer-style-1' );
+    if( $petsone_footer_style == 'footer-style-1' ) {
+        petsone_footer_style_1();
     }
     else{
-       pawsh_footer_style_2();
+       petsone_footer_style_2();
     }
 }
 
 
 
 //footer  style 1
-function pawsh_footer_style_1() {
-    $pawsh_footer_bg_url_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
-    $pawsh_footer_bg_color_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
-    $pawsh_footer_type = get_theme_mod('footer_source_type');
-    $pawsh_footer_e = get_theme_mod('pawsh_footer_elementor_templates');
-    if( $pawsh_footer_bg_url_from_page ){
+function petsone_footer_style_1() {
+    $petsone_footer_bg_url_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
+    $petsone_footer_bg_color_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
+    $petsone_footer_type = get_theme_mod('footer_source_type');
+    $petsone_footer_e = get_theme_mod('petsone_footer_elementor_templates');
+    if( $petsone_footer_bg_url_from_page ){
         $bg_img = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
     }else{
-        $bg_img = get_theme_mod('pawsh_footer_bg');
+        $bg_img = get_theme_mod('petsone_footer_bg');
     }  
-    if( $pawsh_footer_bg_color_from_page ){
+    if( $petsone_footer_bg_color_from_page ){
         $bg_color = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
     }else{
-        $bg_color = get_theme_mod('pawsh_footer_bg_color');
+        $bg_color = get_theme_mod('petsone_footer_bg_color');
     }    
-    $enable_footer_widgets = get_theme_mod('pawsh_enable_footer_widgets');  
+    $enable_footer_widgets = get_theme_mod('petsone_enable_footer_widgets');  
 ?>
 </div>
 
@@ -962,10 +962,10 @@ function pawsh_footer_style_1() {
         endif; 
     endif; ?>
     <?php
-        if ('e' === $pawsh_footer_type) {
+        if ('e' === $petsone_footer_type) {
             echo Elementor\Plugin::instance()
             ->frontend
-                ->get_builder_content_for_display($pawsh_footer_e);
+                ->get_builder_content_for_display($petsone_footer_e);
         }
     ?>
     <div class="footer-bottom">
@@ -979,14 +979,14 @@ function pawsh_footer_style_1() {
                     </div>
                     <div class="col-lg-5 text-center text-lg-right">
                         <p class="copyright">
-                            <?php pawsh_copyright_text(); ?>
+                            <?php petsone_copyright_text(); ?>
                         </p>
                     </div>
                 <?php 
                 else: ?> 
                     <div class="col-lg-12 text-center">
                         <p class="copyright">
-                            <?php pawsh_copyright_text(); ?>
+                            <?php petsone_copyright_text(); ?>
                         </p>
                     </div>
                 <?php 
@@ -1001,22 +1001,22 @@ function pawsh_footer_style_1() {
 
 
 //footer  style 2
-function pawsh_footer_style_2() {
-    $pawsh_footer_bg_url_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
-    $pawsh_footer_bg_color_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
-    $pawsh_footer_type = get_theme_mod('footer_source_type');
-    $pawsh_footer_e = get_theme_mod('pawsh_footer_elementor_templates');
-    if( $pawsh_footer_bg_url_from_page ){
+function petsone_footer_style_2() {
+    $petsone_footer_bg_url_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
+    $petsone_footer_bg_color_from_page = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
+    $petsone_footer_type = get_theme_mod('footer_source_type');
+    $petsone_footer_e = get_theme_mod('petsone_footer_elementor_templates');
+    if( $petsone_footer_bg_url_from_page ){
             $bg_img = get_post_meta( get_the_ID(), 's7template_footer_bg', true );
     }else{
-            $bg_img = get_theme_mod('pawsh_footer_bg');
+            $bg_img = get_theme_mod('petsone_footer_bg');
     }  
-    if( $pawsh_footer_bg_color_from_page ){
+    if( $petsone_footer_bg_color_from_page ){
             $bg_color = get_post_meta( get_the_ID(), 's7template_footer_bg_color', true );
     }else{
-            $bg_color = get_theme_mod('pawsh_footer_bg_color');
+            $bg_color = get_theme_mod('petsone_footer_bg_color');
     }    
-    $enable_footer_widgets = get_theme_mod('pawsh_enable_footer_widgets');  
+    $enable_footer_widgets = get_theme_mod('petsone_enable_footer_widgets');  
 ?>
 </div>
 
@@ -1069,10 +1069,10 @@ function pawsh_footer_style_2() {
         endif; 
     endif; ?>
     <?php
-        if ('e' === $pawsh_footer_type) {
+        if ('e' === $petsone_footer_type) {
             echo Elementor\Plugin::instance()
             ->frontend
-                ->get_builder_content_for_display($pawsh_footer_e);
+                ->get_builder_content_for_display($petsone_footer_e);
         }
     ?>
     <div class="footer-bottom">
@@ -1086,7 +1086,7 @@ function pawsh_footer_style_2() {
                     </div>
                     <div class="col-lg-5 text-center text-lg-right">
                         <p class="copyright">
-                            <?php pawsh_copyright_text(); ?>
+                            <?php petsone_copyright_text(); ?>
                         </p>
                     </div>
 
@@ -1095,7 +1095,7 @@ function pawsh_footer_style_2() {
 
                     <div class="col-lg-12 text-center">
                         <p class="copyright">
-                            <?php pawsh_copyright_text(); ?>
+                            <?php petsone_copyright_text(); ?>
                         </p>
                     </div>
                 <?php 
@@ -1111,15 +1111,15 @@ function pawsh_footer_style_2() {
 
 
 //copyright info
-function pawsh_copyright_text(){
-    echo esc_html(get_theme_mod('pawsh_copyright', esc_html__('Copyright &copy; Pawsh 2023. All rights reserved','pawsh')));
+function petsone_copyright_text(){
+    echo esc_html(get_theme_mod('petsone_copyright', esc_html__('Copyright &copy; Petsone 2023. All rights reserved','petsone')));
 }
 
 
 //back to top area start 
-add_action('pawsh_footer_style', 'pawsh_scrollTop', 15);
-function pawsh_scrollTop(){
-    $scrollTop = get_theme_mod('pawsh_scrollup_switch', false);
+add_action('petsone_footer_style', 'petsone_scrollTop', 15);
+function petsone_scrollTop(){
+    $scrollTop = get_theme_mod('petsone_scrollup_switch', false);
     if($scrollTop == true) :?>
          <div class="back-to-top">
             <span class="back-top"><i class="fa fa-long-arrow-up"></i></span>
@@ -1130,45 +1130,45 @@ function pawsh_scrollTop(){
 
 
 //post-format
-add_action('admin_print_scripts', 'pawsh_scripts_for_admin_panel', 1000);
-function pawsh_scripts_for_admin_panel(){
+add_action('admin_print_scripts', 'petsone_scripts_for_admin_panel', 1000);
+function petsone_scripts_for_admin_panel(){
     if( get_post_type() == 'post' ) :
     ?>
         <script>
             (function ($) {
             "use strict";
                 jQuery(document).ready(function(){
-                    var pawsh = jQuery("input[name='post_format']:checked").attr('id');
-                    if(pawsh == 'post-format-video'){
+                    var petsone = jQuery("input[name='post_format']:checked").attr('id');
+                    if(petsone == 'post-format-video'){
                         jQuery('.cmb2-id--video-url').show();
                     }else{
                         jQuery('.cmb2-id--video-url').hide();
                     }
-                    if(pawsh == 'post-format-audio'){
+                    if(petsone == 'post-format-audio'){
                         jQuery('.cmb2-id--audio-url').show();
                     }else{
                         jQuery('.cmb2-id--audio-url').hide();
                     }
-                    if(pawsh == 'post-format-gallery'){
+                    if(petsone == 'post-format-gallery'){
                         jQuery('.cmb2-id--gallery-images').show();
                     }else{
                         jQuery('.cmb2-id--gallery-images').hide();
                     }
 
                     jQuery('input[name="post_format"]').change(function(){
-                        var pawsh = jQuery("input[name='post_format']:checked").attr('id');
-                        if(pawsh == 'post-format-video'){
+                        var petsone = jQuery("input[name='post_format']:checked").attr('id');
+                        if(petsone == 'post-format-video'){
                             jQuery('.cmb2-id--video-url').show();
                         }else{
                             jQuery('.cmb2-id--video-url').hide();
                         }
-                        if(pawsh == 'post-format-audio'){
+                        if(petsone == 'post-format-audio'){
                             jQuery('.cmb2-id--audio-url').show();
                         }else{
                             jQuery('.cmb2-id--audio-url').hide();
                         }
 
-                        if(pawsh == 'post-format-gallery'){
+                        if(petsone == 'post-format-gallery'){
                             jQuery('.cmb2-id--gallery-images').show();
                         }else{
                             jQuery('.cmb2-id--gallery-images').hide();

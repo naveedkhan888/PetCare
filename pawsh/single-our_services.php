@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="primary" class="content-area pawsh-page-containerr pawsh-single-details">
+<div id="primary" class="content-area petsone-page-containerr petsone-single-details">
 		<main id="main" class="site-main">
 		 	<div class="single-details-area">
 		 		<div class="container">

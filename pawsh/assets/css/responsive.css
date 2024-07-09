@@ -49,10 +49,10 @@
 	.pd-bottom-70 {
 		padding-bottom: 40px;
 	}
-	body #pawsh_main_menu.show {
+	body #petsone_main_menu.show {
 		display: none;
 	}
-	body .expand_close #pawsh_main_menu.show {
+	body .expand_close #petsone_main_menu.show {
 		display: block;
 	}
 	.footer-area .footer-top {
@@ -206,7 +206,7 @@
 	.page-title-area {
 		padding: 80px 0 80px;
 	}
-	.expand_close #pawsh_main_menu.show {
+	.expand_close #petsone_main_menu.show {
 		transition: 0.3s;
 	}
 	.page-title-area h3, .page-title-area .title {

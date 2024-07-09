@@ -33,7 +33,7 @@
  */
 require_once get_template_directory() . '/inc/plugins/tgma/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'pawsh_register_required_plugins' );
+add_action( 'tgmpa_register', 'petsone_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
@@ -52,7 +52,7 @@ add_action( 'tgmpa_register', 'pawsh_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function pawsh_register_required_plugins() {
+function petsone_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -60,54 +60,54 @@ function pawsh_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'               =>  esc_html__('Elementor Page Builder','pawsh'),
+			'name'               =>  esc_html__('Elementor Page Builder','petsone'),
 			'slug'               => 'elementor',
 			'required'           => false,
 		),
 		array(
-			'name'               => esc_html__('Pawsh Toolkit','pawsh'),
-			'slug'               => 'pawsh-toolkit',
-			'source'             => get_template_directory_uri().'/inc/plugins/pawsh-toolkit.zip',
+			'name'               => esc_html__('Petsone Toolkit','petsone'),
+			'slug'               => 'petsone-toolkit',
+			'source'             => get_template_directory_uri().'/inc/plugins/petsone-toolkit.zip',
 			'required'           => false,
 		),
 		array(
-			'name'               =>  esc_html__('Contact Form 7','pawsh'),
+			'name'               =>  esc_html__('Contact Form 7','petsone'),
 			'slug'               => 'contact-form-7',
 			'required'           => false,
 		),
 		array(
-			'name'               => esc_html__('WooCommerce For WordPress','pawsh'),
+			'name'               => esc_html__('WooCommerce For WordPress','petsone'),
 			'slug'               => 'woocommerce',
 			'required'           => false, 
 		),
 		array(
-			'name'               => esc_html__('One Click Demo Import','pawsh'),
+			'name'               => esc_html__('One Click Demo Import','petsone'),
 			'slug'               => 'one-click-demo-import',
 			'source'             => get_template_directory_uri().'/inc/plugins/one-click-demo-import.zip',
 			'required'           => false,
 		),
 		array(
-			'name'               => esc_html__('Mailchimp For WordPress','pawsh'),
+			'name'               => esc_html__('Mailchimp For WordPress','petsone'),
 			'slug'               => 'mailchimp-for-wp',
 			'required'           => false, 
 		),
 		array(
-			'name'               => esc_html__('Classic Editor','pawsh'),
+			'name'               => esc_html__('Classic Editor','petsone'),
 			'slug'               => 'classic-editor',
 			'required'           => false, 
 		),
 		array(
-			'name'               => esc_html__('GDPR Cookie Compliance','pawsh'),
+			'name'               => esc_html__('GDPR Cookie Compliance','petsone'),
 			'slug'               => 'gdpr-cookie-compliance',
 			'required'           => false, 
 		),
 		array(
-			'name'               => esc_html__('Custom Post Type UI','pawsh'),
+			'name'               => esc_html__('Custom Post Type UI','petsone'),
 			'slug'               => 'custom-post-type-ui',
 			'required'           => false, 
 		),
 		array(
-			'name'               => esc_html__('Slider Revolution','pawsh'),
+			'name'               => esc_html__('Slider Revolution','petsone'),
 			'slug'               => 'revslider',
 			'source'             => get_template_directory_uri().'/inc/plugins/revslider.zip',
 			'required'           => false,

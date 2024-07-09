@@ -9,13 +9,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
 $blog_column = is_active_sidebar( 'right-sidebar' ) ? 8 : 12 ;
 get_header();
 ?>
 
-	<div id="primary" class="content-area pawsh-page-containerr pawsh-blog-page">
+	<div id="primary" class="content-area petsone-page-containerr petsone-blog-page">
         <main id="main" class="site-main">
 			<div class="blog-area">
 				<div class="container">
@@ -39,7 +39,7 @@ get_header();
 									endwhile;
 								?>
 								
-								<div class="pawsh-pagination text-center">
+								<div class="petsone-pagination text-center">
 									<?php
 										the_posts_pagination(array(
 										'next_text' => '<i class="fas fa-arrow-right"></i>',

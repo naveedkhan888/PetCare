@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
-$pawshTag = Pawsh_Function('Tags');
-$pawshFunc = Pawsh_Function('Functions');
-$pawsh_tg = Pawsh_Function('Tags');
+$petsoneTag = Petsone_Function('Tags');
+$petsoneFunc = Petsone_Function('Functions');
+$petsone_tg = Petsone_Function('Tags');
 
 if( is_single() ): ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -17,8 +17,8 @@ if( is_single() ): ?>
 			
 			<div class="blog-item-info">
 				<ul class="post-meta">
-					<li class="post-author"><?php $pawsh_tg->posted_by(); ?></li>
-					<li class="post-date"><?php $pawsh_tg->posted_on(); ?></li>
+					<li class="post-author"><?php $petsone_tg->posted_by(); ?></li>
+					<li class="post-date"><?php $petsone_tg->posted_on(); ?></li>
 				</ul>
 			</div>
 
@@ -29,7 +29,7 @@ if( is_single() ): ?>
 			 <?php 
 			 if( has_tag() ) : ?>
 				<div class="blog-details_bottom">
-					<?php $pawsh_tg->tags(); ?>
+					<?php $petsone_tg->tags(); ?>
 				</div>
 			<?php 
 			endif; ?>
@@ -50,8 +50,8 @@ else: ?>
 				<?php 
 				endif; ?>
 
-				<span><i class="fa fa-user"></i><?php $pawshTag->posted_by(); ?></span>
-                <span><i class="fa fa-clock-o"></i><?php $pawshTag->posted_on(); ?></span>
+				<span><i class="fa fa-user"></i><?php $petsoneTag->posted_by(); ?></span>
+                <span><i class="fa fa-clock-o"></i><?php $petsoneTag->posted_on(); ?></span>
                 <?php the_content(); ?>
 			</div>
 		</div>

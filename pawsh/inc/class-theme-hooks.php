@@ -4,14 +4,14 @@ if (!defined('ABSPATH')){
 	exit(); //exit if access directly
 }
 
-if (!class_exists('Pawsh_hook')){
+if (!class_exists('Petsone_hook')){
 
-	class Pawsh_hook{
+	class Petsone_hook{
 
 		private static $instance;
 
 		public function __construct() {
-			add_action( 'pawsh_before_site_content', array($this,'breadcrumb') );
+			add_action( 'petsone_before_site_content', array($this,'breadcrumb') );
 		}
 
 		public static function getInstance(){
@@ -25,8 +25,8 @@ if (!class_exists('Pawsh_hook')){
 
 	} //end class
 
-	if (class_exists('Pawsh_hook')){
-		Pawsh_hook::getInstance();
+	if (class_exists('Petsone_hook')){
+		Petsone_hook::getInstance();
 	}
 
 } //endif

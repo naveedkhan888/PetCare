@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
-$pawshTag = Pawsh_Function('Tags');
-$pawshFunc = Pawsh_Function('Functions');
-$pawsh_tg = Pawsh_Function('Tags');
+$petsoneTag = Petsone_Function('Tags');
+$petsoneFunc = Petsone_Function('Functions');
+$petsone_tg = Petsone_Function('Tags');
 
 if( is_single() ): ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -20,9 +20,9 @@ if( is_single() ): ?>
 	            <div class="postbox-gallery mb-30">
 	                <?php 
 	                foreach( $gallery_images as $key => $image ) :   
-	                	$image_url = wp_get_attachment_image_src($key, 'pawsh-main-blog', true);
+	                	$image_url = wp_get_attachment_image_src($key, 'petsone-main-blog', true);
 	                	?>
-	                    <img src="<?php echo esc_url($image_url[0]); ?>" alt="<?php print esc_attr__('image','pawsh'); ?>" />
+	                    <img src="<?php echo esc_url($image_url[0]); ?>" alt="<?php print esc_attr__('image','petsone'); ?>" />
 	                <?php 
 	                endforeach; ?>
 	            </div>
@@ -31,8 +31,8 @@ if( is_single() ): ?>
 			
 			<div class="blog-item-info">
 				<ul class="post-meta">
-					<li class="post-author"><?php $pawsh_tg->posted_by(); ?></li>
-					<li class="post-date"><?php $pawsh_tg->posted_on(); ?></li>
+					<li class="post-author"><?php $petsone_tg->posted_by(); ?></li>
+					<li class="post-date"><?php $petsone_tg->posted_on(); ?></li>
 				</ul>
 			</div>
 
@@ -50,7 +50,7 @@ if( is_single() ): ?>
 					the_content( sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'pawsh' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'petsone' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -60,14 +60,14 @@ if( is_single() ): ?>
 						get_the_title()
 					) );
 					
-					$pawshFunc->link_pages(); 
+					$petsoneFunc->link_pages(); 
 				?>
 			 </div>
 
 			<?php 
 			if( has_category() ): ?>
 				<div class="blog-details_bottom">
-					<?php $pawsh_tg->categories(); ?>
+					<?php $petsone_tg->categories(); ?>
 				</div>	
 			<?php 
 			endif; ?>
@@ -75,7 +75,7 @@ if( is_single() ): ?>
 			 <?php 
 			 if( has_tag() ) : ?>
 				<div class="blog-details_bottom">
-					<?php $pawsh_tg->tags(); ?>
+					<?php $petsone_tg->tags(); ?>
 				</div>
 			<?php 
 			endif; ?>
@@ -98,9 +98,9 @@ else: ?>
 	            <div class="postbox-gallery mb-30">
 	                <?php 
 	                foreach( $gallery_images as $key => $image ) :   
-	                	$image_url = wp_get_attachment_image_src($key, 'pawsh-main-blog', true);
+	                	$image_url = wp_get_attachment_image_src($key, 'petsone-main-blog', true);
 	                	?>
-	                    <img src="<?php echo esc_url($image_url[0]); ?>" alt="<?php print esc_attr__('image','pawsh'); ?>" />
+	                    <img src="<?php echo esc_url($image_url[0]); ?>" alt="<?php print esc_attr__('image','petsone'); ?>" />
 	                <?php 
 	                endforeach; ?>
 	            </div>
@@ -115,12 +115,12 @@ else: ?>
 				<?php 
 				endif; ?>
 
-				<span><i class="fa fa-user"></i><?php $pawshTag->posted_by(); ?></span>
-                <span><i class="fa fa-clock-o"></i><?php $pawshTag->posted_on(); ?></span>
+				<span><i class="fa fa-user"></i><?php $petsoneTag->posted_by(); ?></span>
+                <span><i class="fa fa-clock-o"></i><?php $petsoneTag->posted_on(); ?></span>
                 <?php the_excerpt(); ?>
 
 				<div class="blog-btn">
-				    <a class="read-more-btn" href="<?php esc_url( the_permalink() );?>"><?php esc_html_e("Read More", "pawsh");?><i class="fa fa-long-arrow-right"></i></a>
+				    <a class="read-more-btn" href="<?php esc_url( the_permalink() );?>"><?php esc_html_e("Read More", "petsone");?><i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			
 			</div>

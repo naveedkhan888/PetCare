@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
         <h2 class="comments-title">
 			<?php
-			$pawsh_comment_count = get_comments_number();
-			if ( '1' === $pawsh_comment_count ) {
+			$petsone_comment_count = get_comments_number();
+			if ( '1' === $petsone_comment_count ) {
 				printf(
 				/* translators: 1: title. */
-					esc_html__( '1 Comment', 'pawsh' )
+					esc_html__( '1 Comment', 'petsone' )
 
 				);
 			} else {
 				printf( // WPCS: XSS OK.
 				/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s Comments &ldquo;%2$s&rdquo;', '%1$s Comments ', $pawsh_comment_count, 'comments title', 'pawsh' ) ),
-					number_format_i18n( $pawsh_comment_count )
+					esc_html( _nx( '%1$s Comments &ldquo;%2$s&rdquo;', '%1$s Comments ', $petsone_comment_count, 'comments title', 'petsone' ) ),
+					number_format_i18n( $petsone_comment_count )
 				);
 			}
 			?>
@@ -56,7 +56,7 @@ if ( post_password_required() ) {
 			<?php
 			wp_list_comments( array(
 				'style'      => 'ul',
-				'callback' => 'pawsh_comment_modification', 
+				'callback' => 'petsone_comment_modification', 
 				'short_ping' => true,
 			) );
 			?>
@@ -66,35 +66,35 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'pawsh' ); ?></p>
+            <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'petsone' ); ?></p>
 		<?php
 		endif;
 
 	endif; // Check for have_comments().
 	$fields = array(
 		'author' => ' <div class="form-group">
-                        <input type="text" id="author" name="author" tabindex="1" value="' . esc_attr( $commenter['comment_author'] ) . '" class="form-control" placeholder="'.esc_attr__('Name...','pawsh').'">
+                        <input type="text" id="author" name="author" tabindex="1" value="' . esc_attr( $commenter['comment_author'] ) . '" class="form-control" placeholder="'.esc_attr__('Name...','petsone').'">
                     </div>',
 		'email'  => ' <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" tabindex="2" placeholder="'.esc_attr__('Email...','pawsh').'">
+                        <input type="email" class="form-control" name="email" id="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" tabindex="2" placeholder="'.esc_attr__('Email...','petsone').'">
                     </div>',
 		'URL'    => '<div class="form-group">
-                        <input type="text" id="url" name="url" value="' . esc_url(  $commenter['comment_author_url'] ) . '" class="form-control" tabindex="3" placeholder="'.esc_attr__('Subject...','pawsh').'">
+                        <input type="text" id="url" name="url" value="' . esc_url(  $commenter['comment_author_url'] ) . '" class="form-control" tabindex="3" placeholder="'.esc_attr__('Subject...','petsone').'">
                     </div>'
 	);
 	comment_form( array(
 		'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
 		'comment_notes_before' => '',
 		'comment_notes_after'  => '',
-		'title_reply'          => esc_html__( 'Post Your Comment', 'pawsh' ),
-		'title_reply_to'       => esc_html__( 'Leave A Reply To %s', 'pawsh' ),
+		'title_reply'          => esc_html__( 'Post Your Comment', 'petsone' ),
+		'title_reply_to'       => esc_html__( 'Leave A Reply To %s', 'petsone' ),
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
 		'cancel_reply_link'    => '<i class="fa fa-times ml-2"></i>',
-		'class_submit'         => 'submit-btn comment-submit-pawsh',
-		'label_submit'         => esc_html__( 'Post comment', 'pawsh' ),
+		'class_submit'         => 'submit-btn comment-submit-petsone',
+		'label_submit'         => esc_html__( 'Post comment', 'petsone' ),
 		'comment_field'        => '<div class="form-group textarea">
-                                <textarea name="comment" id="comment" class="form-control custom-msg p-4" placeholder="' . esc_attr__( 'Comment...', 'pawsh' ) . '" cols="30" rows="6"></textarea>
+                                <textarea name="comment" id="comment" class="form-control custom-msg p-4" placeholder="' . esc_attr__( 'Comment...', 'petsone' ) . '" cols="30" rows="6"></textarea>
                             </div>'
 	) );
 	?>

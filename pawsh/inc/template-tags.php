@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package pawsh
+ * @package petsone
  */
 if (!defined('ABSPATH')){
     exit(); //exit if access directly
 }
 
-if (!class_exists('Pawsh_Tags')){
-    class Pawsh_Tags{
+if (!class_exists('Petsone_Tags')){
+    class Petsone_Tags{
 		
 		
 		private static $instance;
@@ -55,7 +55,7 @@ if (!class_exists('Pawsh_Tags')){
 	    public static function posted_by() {
 		    $byline = sprintf(
 		    /* translators: %s: post author. */
-			    esc_html_x( 'By %s', 'post author', 'pawsh' ),
+			    esc_html_x( 'By %s', 'post author', 'petsone' ),
 			    '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		    );
 
@@ -103,7 +103,7 @@ if (!class_exists('Pawsh_Tags')){
                 <div class="tag-list-wrapper">
                     <ul class="navs navs-tag">
 	                    <li class="navs__item">
-	                        <h4 class="navs__item-tag mr-2"><?php esc_html_e( 'Tags : ', 'pawsh' ); ?></h4>
+	                        <h4 class="navs__item-tag mr-2"><?php esc_html_e( 'Tags : ', 'petsone' ); ?></h4>
 	                    </li>
 	                    <?php
 	                     if ( get_the_tag_list()) {
@@ -124,7 +124,7 @@ if (!class_exists('Pawsh_Tags')){
 				<div class="tag-list-wrapper">
 					<ul class="navs navs-tag">
 						<li class="navs__item">
-	                        <h4 class="navs__item-tag"><?php esc_html_e( 'Categories : ', 'pawsh' ); ?></h4>
+	                        <h4 class="navs__item-tag"><?php esc_html_e( 'Categories : ', 'petsone' ); ?></h4>
 	                    </li>
 						<?php
 						$categories = get_the_category( get_the_ID() );

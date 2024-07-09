@@ -9,16 +9,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
-$pawsh_error_404_text = get_theme_mod('pawsh_error_404_text','404'); 
-$pawsh_error_title = get_theme_mod('pawsh_error_title','Page not found '); 
-$pawsh_error_link_text = get_theme_mod('pawsh_error_link_text','Back To Home '); 
-$pawsh_error_desc = get_theme_mod('pawsh_error_desc','Oops! The page you are looking for does not exist. It might have been moved or deleted. '); 
+$petsone_error_404_text = get_theme_mod('petsone_error_404_text','404'); 
+$petsone_error_title = get_theme_mod('petsone_error_title','Page not found '); 
+$petsone_error_link_text = get_theme_mod('petsone_error_link_text','Back To Home '); 
+$petsone_error_desc = get_theme_mod('petsone_error_desc','Oops! The page you are looking for does not exist. It might have been moved or deleted. '); 
 get_header();
 ?>
 
-    <div id="primary" class="content-area pawsh-404-page pawsh-page-containerr">
+    <div id="primary" class="content-area petsone-404-page petsone-page-containerr">
         <main id="main" class="site-main">
 			<div class="blog-area-">
 				<div class="container">
@@ -28,17 +28,17 @@ get_header();
 								<section class="error-404 not-found">
 									<header class="page-header">
 										<h1 class="error-heading">
-											<?php echo esc_html( $pawsh_error_404_text ); ?>
+											<?php echo esc_html( $petsone_error_404_text ); ?>
 										</h1>
 										<h2 class="error-sub-title">
-											<?php echo esc_html( $pawsh_error_title ); ?>
+											<?php echo esc_html( $petsone_error_title ); ?>
 										</h2>
-										<p><?php echo esc_html( $pawsh_error_desc ); ?></p>
+										<p><?php echo esc_html( $petsone_error_desc ); ?></p>
 									</header><!-- .page-header -->
 
 									<div class="page-content error-page-inner">
 										<a href="<?php echo esc_url(home_url('/')); ?>" class="go-back-btnn">
-											<?php echo esc_html( $pawsh_error_link_text ); ?>
+											<?php echo esc_html( $petsone_error_link_text ); ?>
 										</a>
 									</div>
 								</section>

@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Pawsh
+ * @package Petsone
  */
 ?>
 <section class="no-results not-found pb-5">
 	<header class="page-header">
-		<h2 class="page-title"><?php esc_html_e( 'Nothing Found', 'pawsh' ); ?></h2>
+		<h2 class="page-title"><?php esc_html_e( 'Nothing Found', 'petsone' ); ?></h2>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -19,7 +19,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'pawsh' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'petsone' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -31,13 +31,13 @@
 
 		elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'pawsh' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'petsone' ); ?></p>
 			<?php
 			get_search_form();
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'pawsh' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'petsone' ); ?></p>
 			<?php
 			get_search_form();
 

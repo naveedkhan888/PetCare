@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package pawsh
+ * @package petsone
  */
 ?>
 <!doctype html>
@@ -67,54 +67,54 @@ if($is_preloader){
 </script>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'pawsh' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'petsone' ); ?></a>
 
 	<?php 
-	$pawsh_show_header_button = get_theme_mod('pawsh_show_header_button');
+	$petsone_show_header_button = get_theme_mod('petsone_show_header_button');
     $btn_text_from_page = get_post_meta(get_the_ID(), 'button_text_from_page', true);
     if( $btn_text_from_page ){
         $btn_text = get_post_meta(get_the_ID(), 'button_text_from_page', true);
         $btn_link = get_post_meta(get_the_ID(), 'button_url_from_page', true);
     }else{
-        $btn_text = get_theme_mod('pawsh_header_btn_text', 'free trial');
-        $btn_link = get_theme_mod('pawsh_header_btn_link', '#');
+        $btn_text = get_theme_mod('petsone_header_btn_text', 'free trial');
+        $btn_link = get_theme_mod('petsone_header_btn_link', '#');
     }
     // header-search
-    $show_header_search = get_theme_mod('pawsh_header_search_show', false);
+    $show_header_search = get_theme_mod('petsone_header_search_show', false);
     /** header topbar switcher **/
-    $enable_header_topbar = get_theme_mod('pawsh_topbar_switch');
+    $enable_header_topbar = get_theme_mod('petsone_topbar_switch');
     // header_link
-    $enable_investment_offer_link = get_theme_mod('pawsh_show_investment_offer_link');
-    $enable_header_link_text = get_theme_mod('pawsh_header_link_text', esc_html__('pawsh Offer', 'pawsh'));
-    $enable_header_link_url = get_theme_mod('pawsh_header_link_url');
+    $enable_investment_offer_link = get_theme_mod('petsone_show_investment_offer_link');
+    $enable_header_link_text = get_theme_mod('petsone_header_link_text', esc_html__('petsone Offer', 'petsone'));
+    $enable_header_link_url = get_theme_mod('petsone_header_link_url');
     // contact info
-    $enable_show_contact_info = get_theme_mod('pawsh_show_contact_info');
-    $contact_header_email = get_theme_mod('pawsh_header_email', esc_html__('info@gmail.com', 'pawsh'));
-    $contact_header_phone = get_theme_mod('pawsh_header_phone', esc_html__('+97657945737', 'pawsh')); ?>
+    $enable_show_contact_info = get_theme_mod('petsone_show_contact_info');
+    $contact_header_email = get_theme_mod('petsone_header_email', esc_html__('info@gmail.com', 'petsone'));
+    $contact_header_phone = get_theme_mod('petsone_header_phone', esc_html__('+97657945737', 'petsone')); ?>
     <!-- navbar start -->
-    <div class="navbar-area navbar-area-2 style-2 <?php if( empty($enable_header_topbar) ){ esc_attr_e("extra-margin-top", "pawsh") ; } ?>">
+    <div class="navbar-area navbar-area-2 style-2 <?php if( empty($enable_header_topbar) ){ esc_attr_e("extra-margin-top", "petsone") ; } ?>">
         <?php 
-        $pawsh_show_header_button = get_theme_mod('pawsh_show_header_button');
+        $petsone_show_header_button = get_theme_mod('petsone_show_header_button');
     $btn_text_from_page = get_post_meta(get_the_ID(), 'button_text_from_page', true);
     if( $btn_text_from_page ){
         $btn_text = get_post_meta(get_the_ID(), 'button_text_from_page', true);
         $btn_link = get_post_meta(get_the_ID(), 'button_url_from_page', true);
     }else{
-        $btn_text = get_theme_mod('pawsh_header_btn_text', 'free trial');
-        $btn_link = get_theme_mod('pawsh_header_btn_link', '#');
+        $btn_text = get_theme_mod('petsone_header_btn_text', 'free trial');
+        $btn_link = get_theme_mod('petsone_header_btn_link', '#');
     }
     // header-search
-    $show_header_search = get_theme_mod('pawsh_header_search_show', false);
+    $show_header_search = get_theme_mod('petsone_header_search_show', false);
     /** header topbar switcher **/
-    $enable_header_topbar = get_theme_mod('pawsh_topbar_switch');
+    $enable_header_topbar = get_theme_mod('petsone_topbar_switch');
     // header_link
-    $enable_investment_offer_link = get_theme_mod('pawsh_show_investment_offer_link');
-    $enable_header_link_text = get_theme_mod('pawsh_header_link_text', esc_html__('pawsh Offer', 'pawsh'));
-    $enable_header_link_url = get_theme_mod('pawsh_header_link_url');
+    $enable_investment_offer_link = get_theme_mod('petsone_show_investment_offer_link');
+    $enable_header_link_text = get_theme_mod('petsone_header_link_text', esc_html__('petsone Offer', 'petsone'));
+    $enable_header_link_url = get_theme_mod('petsone_header_link_url');
     // contact info
-    $enable_show_contact_info = get_theme_mod('pawsh_show_contact_info');
-    $contact_header_email = get_theme_mod('pawsh_header_email', esc_html__('info@gmail.com', 'pawsh'));
-    $contact_header_phone = get_theme_mod('pawsh_header_phone', esc_html__('+97657945737', 'pawsh'));
+    $enable_show_contact_info = get_theme_mod('petsone_show_contact_info');
+    $contact_header_email = get_theme_mod('petsone_header_email', esc_html__('info@gmail.com', 'petsone'));
+    $contact_header_phone = get_theme_mod('petsone_header_phone', esc_html__('+97657945737', 'petsone'));
 	 ?>
 
     <div class="body-overlay" id="body-overlay"></div>
@@ -125,19 +125,19 @@ if($is_preloader){
     <?php 
 
 // Default header
-    $pawsh_header_type = get_theme_mod('choose_default_header');
+    $petsone_header_type = get_theme_mod('choose_default_header');
     
 // Elementor header
-    if($pawsh_header_type == 'elementor-header') {
-        $pawsh_header_e = get_theme_mod('choose_elementor_header');
+    if($petsone_header_type == 'elementor-header') {
+        $petsone_header_e = get_theme_mod('choose_elementor_header');
         echo Elementor\Plugin::instance()
         ->frontend
-             ->get_builder_content_for_display($pawsh_header_e);   
+             ->get_builder_content_for_display($petsone_header_e);   
     }
     else {
         ?>
 	<!-- navbar start -->
-	<div class="navbar-area navbar-area-2 style-2 <?php if( empty($enable_header_topbar) ){ esc_attr_e("extra-margin-top", "pawsh") ; } ?>">
+	<div class="navbar-area navbar-area-2 style-2 <?php if( empty($enable_header_topbar) ){ esc_attr_e("extra-margin-top", "petsone") ; } ?>">
 	    <?php 
 	    if($enable_header_topbar == true) :?>
 	        <div class="navbar-top">
@@ -164,8 +164,8 @@ if($is_preloader){
 	                                    </li>
 	                                <?php 
 	                                endif; ?>
-	                                <?php pawsh_header_social_profiles(); ?>
-	                                <?php pawsh_user_login(); ?>
+	                                <?php petsone_header_social_profiles(); ?>
+	                                <?php petsone_user_login(); ?>
 	                            </ul>
 	                        <?php 
 	                        endif; ?>
@@ -179,9 +179,9 @@ if($is_preloader){
 	        <div class="container nav-container nav-white">
 	            <div class="responsive-mobile-menu">
                     <div class="logo">
-                        <?php echo pawsh_header_logo(); ?>
+                        <?php echo petsone_header_logo(); ?>
                     </div>
-	                <button class="s7t-header-menu toggle-btn d-block d-lg-none" data-toggle="collapse" data-val="0" data-target="#pawsh_main_menu" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation','pawsh'); ?>">
+	                <button class="s7t-header-menu toggle-btn d-block d-lg-none" data-toggle="collapse" data-val="0" data-target="#petsone_main_menu" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation','petsone'); ?>">
 	                    <span class="icon-left"></span>
 	                    <span class="icon-right"></span>
 	                </button>
@@ -193,8 +193,8 @@ if($is_preloader){
                         'menu_class' => 'navbar-nav',
                         'container' => 'div',
                         'container_class' => 'collapse navbar-collapse',
-                        'container_id' => 'pawsh_main_menu',
-                        'fallback_cb' => 'pawsh_theme_fallback_menu',
+                        'container_id' => 'petsone_main_menu',
+                        'fallback_cb' => 'petsone_theme_fallback_menu',
                     ));
                 ?>
                 <?php 
@@ -228,4 +228,4 @@ if($is_preloader){
 ?>
 
 <div id="content" class="site-content">
-<?php do_action('pawsh_before_main_content'); ?>
+<?php do_action('petsone_before_main_content'); ?>

@@ -1,23 +1,23 @@
 <?php
 /**
- * pawsh functions and definitions
+ * petsone functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package pawsh
+ * @package petsone
  */
  
 /**
  * Define Const for theme Dir
  * @since 1.0.0
  * */
-define('PAWSH_ROOT_PATH',get_template_directory());
-define('PAWSH_ROOT_URL',get_template_directory_uri());
-define('PAWSH_CSS',PAWSH_ROOT_URL .'/assets/css');
-define('PAWSH_JS',PAWSH_ROOT_URL .'/assets/js');
-define('PAWSH_IMG',PAWSH_ROOT_URL .'/assets/img');
-define('PAWSH_INC',PAWSH_ROOT_PATH .'/inc');
-define('PAWSH_THEME_STYLESHEETS',PAWSH_INC .'/theme-stylesheets');
+define('PETSONE_ROOT_PATH',get_template_directory());
+define('PETSONE_ROOT_URL',get_template_directory_uri());
+define('PETSONE_CSS',PETSONE_ROOT_URL .'/assets/css');
+define('PETSONE_JS',PETSONE_ROOT_URL .'/assets/js');
+define('PETSONE_IMG',PETSONE_ROOT_URL .'/assets/img');
+define('PETSONE_INC',PETSONE_ROOT_PATH .'/inc');
+define('PETSONE_THEME_STYLESHEETS',PETSONE_INC .'/theme-stylesheets');
 
 /**
  * define theme info
@@ -30,29 +30,29 @@ if (is_child_theme()){
 }else{
 	$theme_info = wp_get_theme();
 }
-define('PAWSH_DEV_MODE',true);
-$gazania_version = PAWSH_DEV_MODE ? time() : $theme_info->get('Version');
-define('PAWSH_NAME',$theme_info->get('Name'));
-define('PAWSH_VERSION',$gazania_version);
-define('PAWSH_AUTHOR',$theme_info->get('Author'));
-define('PAWSH_AUTHOR_URI',$theme_info->get('AuthorURI'));
+define('PETSONE_DEV_MODE',true);
+$gazania_version = PETSONE_DEV_MODE ? time() : $theme_info->get('Version');
+define('PETSONE_NAME',$theme_info->get('Name'));
+define('PETSONE_VERSION',$gazania_version);
+define('PETSONE_AUTHOR',$theme_info->get('Author'));
+define('PETSONE_AUTHOR_URI',$theme_info->get('AuthorURI'));
 
 /*
  * include template helper function
  * @since 1.0.0
  * */
-if (file_exists(PAWSH_INC.'/template-functions.php') && PAWSH_INC.'/template-tags.php'){
-	require_once  PAWSH_INC.'/template-functions.php';
-	require_once  PAWSH_INC.'/template-tags.php';
+if (file_exists(PETSONE_INC.'/template-functions.php') && PETSONE_INC.'/template-tags.php'){
+	require_once  PETSONE_INC.'/template-functions.php';
+	require_once  PETSONE_INC.'/template-tags.php';
 
-	function Pawsh_Function($instance){
+	function Petsone_Function($instance){
 		$new_instance = false;
 		switch ($instance){
 			case ("Functions"):
-				$new_instance = class_exists('Pawsh_Functions') ? Pawsh_Functions::getInstance() : false;
+				$new_instance = class_exists('Petsone_Functions') ? Petsone_Functions::getInstance() : false;
 				break;
 			case ("Tags"):
-				$new_instance = class_exists('Pawsh_Tags') ? Pawsh_Tags::getInstance() : false;
+				$new_instance = class_exists('Petsone_Tags') ? Petsone_Tags::getInstance() : false;
 				break;
 			default:
 				 $new_instance = false;
@@ -69,20 +69,20 @@ if (file_exists(PAWSH_INC.'/template-functions.php') && PAWSH_INC.'/template-tag
 * Include theme init file
 * @since 1.0.0
 */
-if ( file_exists(PAWSH_INC.'/class-pawsh-init.php' ) ) {
-	require_once  PAWSH_INC.'/class-pawsh-init.php';
+if ( file_exists(PETSONE_INC.'/class-petsone-init.php' ) ) {
+	require_once  PETSONE_INC.'/class-petsone-init.php';
 }
 
-if ( file_exists(PAWSH_INC.'/plugins/tgma/activate.php') ) {
-	require_once  PAWSH_INC.'/plugins/tgma/activate.php';
+if ( file_exists(PETSONE_INC.'/plugins/tgma/activate.php') ) {
+	require_once  PETSONE_INC.'/plugins/tgma/activate.php';
 }		
 
 /**
  * Custom template helper function for this theme.
  */
-require_once PAWSH_INC . '/template-helper.php';
-require_once PAWSH_INC . '/pawsh_customizer.php';
-require_once PAWSH_INC . '/pawsh_customizer_data.php';
+require_once PETSONE_INC . '/template-helper.php';
+require_once PETSONE_INC . '/petsone_customizer.php';
+require_once PETSONE_INC . '/petsone_customizer_data.php';
 
 
 
@@ -100,26 +100,26 @@ add_filter( 'comment_form_fields', 'gazania_move_comment_field_to_bottom' );
  * Nav menu fallback function
  * @since 1.0.0
  */
- function pawsh_primary_menu_fallback()
+ function petsone_primary_menu_fallback()
 {
     get_template_part('template-parts/default', 'menu');
 }
 
 
-function pawsh_block_editor_styles() {
+function petsone_block_editor_styles() {
 	wp_enqueue_style( 'block-editor-bootstrap', get_theme_file_uri( 'assets/css/block-editor.bootstrap.css' ), array(), null );
 	wp_enqueue_style( 'block-editor-theme', get_theme_file_uri( 'assets/css/block-editor.theme.css' ), array(), null );
 }
-add_action( 'enqueue_block_editor_assets', 'pawsh_block_editor_styles', 1, 1 );
+add_action( 'enqueue_block_editor_assets', 'petsone_block_editor_styles', 1, 1 );
 
 /**
 * admin js
 **/
-add_action('admin_enqueue_scripts', 'pawsh_admin_custom_scripts');
-function pawsh_admin_custom_scripts(){
+add_action('admin_enqueue_scripts', 'petsone_admin_custom_scripts');
+function petsone_admin_custom_scripts(){
 	wp_enqueue_media();
-	wp_register_script('pawsh-admin-custom', get_template_directory_uri().'/inc/js/admin_custom.js', array('jquery'), '', true);
-	wp_enqueue_script('pawsh-admin-custom');
+	wp_register_script('petsone-admin-custom', get_template_directory_uri().'/inc/js/admin_custom.js', array('jquery'), '', true);
+	wp_enqueue_script('petsone-admin-custom');
 }
 
 
@@ -127,7 +127,7 @@ function pawsh_admin_custom_scripts(){
 * shortcode supports for removing extra p, spance etc
 *
 */
-add_filter( 'the_content', 'pawsh_shortcode_extra_content_remove' );
+add_filter( 'the_content', 'petsone_shortcode_extra_content_remove' );
 /**
  * Filters the content to remove any extra paragraph or break tags
  * caused by shortcodes.
@@ -137,7 +137,7 @@ add_filter( 'the_content', 'pawsh_shortcode_extra_content_remove' );
  * @param string $content  String of HTML content.
  * @return string $content Amended string of HTML content.
  */
-function pawsh_shortcode_extra_content_remove( $content ) {
+function petsone_shortcode_extra_content_remove( $content ) {
 
     $array = array(
         '<p>['    => '[',
@@ -153,31 +153,31 @@ function pawsh_shortcode_extra_content_remove( $content ) {
  * Nav menu fallback function
  * @since 1.0.0
  */
- function pawsh_theme_fallback_menu()
+ function petsone_theme_fallback_menu()
 {
     get_template_part('template-parts/default', 'menu');
 }
 
 
 /**
- * Pawsh CSS Include
+ * Petsone CSS Include
  */
 function enqueue_our_required_stylesheet(){
 	wp_enqueue_style('load-fa-pro', get_template_directory_uri(). '/assets/fonts/fontawesome-pro-v5.css');
 	wp_enqueue_style('load-fa', get_template_directory_uri(). '/assets/fonts/fontawesome-v6.css');
 	wp_enqueue_style('roboto-font', get_template_directory_uri() . '/assets/fonts/roboto.css' );
 	wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
-	wp_enqueue_style('pawsh-owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css' );
+	wp_enqueue_style('petsone-owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css' );
 	wp_enqueue_style('popups', get_template_directory_uri() . '/assets/css/magnific-popup.css' );
-	wp_enqueue_style('pawsh-style-css', get_template_directory_uri() . '/assets/css/pawsh.css' );
-	wp_enqueue_style('pawsh-responsive-css', get_template_directory_uri() . '/assets/css/pawsh-responsive.css' );
+	wp_enqueue_style('petsone-style-css', get_template_directory_uri() . '/assets/css/petsone.css' );
+	wp_enqueue_style('petsone-responsive-css', get_template_directory_uri() . '/assets/css/petsone-responsive.css' );
 	
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_our_required_stylesheet' );
 
 
 /**
- * Pawsh CSS Include In Footer
+ * Petsone CSS Include In Footer
  */
 function add_css_in_footer() {
 	$rtl_class = get_body_class();
@@ -200,8 +200,8 @@ function add_css_in_footer() {
 add_action( 'wp_footer', 'add_css_in_footer', 100 );
 
 function enqueue_theme_styles() { 
-	wp_register_style( 'header-style', PAWSH_CSS . '/style.css', array(), time(), 'all' ); 
-	// wp_register_style( 'responsive', PAWSH_CSS . '/responsive.css', array(), time(), 'all' ); 
+	wp_register_style( 'header-style', PETSONE_CSS . '/style.css', array(), time(), 'all' ); 
+	// wp_register_style( 'responsive', PETSONE_CSS . '/responsive.css', array(), time(), 'all' ); 
 	
 	wp_enqueue_style( 'header-style' ); 
 	wp_enqueue_style( 'responsive' ); 
@@ -216,7 +216,7 @@ function enqueue_theme_styles() {
 
 
 /**
- * Pawsh JS Include
+ * Petsone JS Include
  */
 function enqueue_load_js() {
 	wp_enqueue_script( 'jquery.slicknav', get_template_directory_uri() . '/assets/js/jquery.slicknav.js', array( 'jquery' ), '', true );
@@ -238,20 +238,20 @@ add_action( 'wp_enqueue_scripts', 'enqueue_load_js' );
 /**
  * Function For Elementor Global Colors after import.
  */
-add_action('akd_elementor_global', 'pawsh_elementor_global_setup');
-function pawsh_elementor_global_setup()
+add_action('akd_elementor_global', 'petsone_elementor_global_setup');
+function petsone_elementor_global_setup()
 {
-    $pawsh_elementor_kit = apply_filters('pawsh_elementor_global', false);
-    if ($pawsh_elementor_kit)
+    $petsone_elementor_kit = apply_filters('petsone_elementor_global', false);
+    if ($petsone_elementor_kit)
     {
-        esc_attr($pawsh_elementor_kit);
+        esc_attr($petsone_elementor_kit);
     }
 }
 
 /**
  * Get Elementor Template list
  */
-function pawsh_get_elementor_templates()
+function petsone_get_elementor_templates()
 {
     $args = array(
         'post_type' => 'elementor_library',
@@ -259,14 +259,14 @@ function pawsh_get_elementor_templates()
 		'posts_per_page' => -1,
 
     );
-    $pawsh_the_query = new WP_Query($args);
-    $pawsh_elementor_posts = array();
-    if ($pawsh_the_query->have_posts()):
-        foreach ($pawsh_the_query->posts as $pawsh_post):
-            $pawsh_elementor_posts[$pawsh_post->ID] = apply_filters('the_title', get_the_title($pawsh_post));
+    $petsone_the_query = new WP_Query($args);
+    $petsone_elementor_posts = array();
+    if ($petsone_the_query->have_posts()):
+        foreach ($petsone_the_query->posts as $petsone_post):
+            $petsone_elementor_posts[$petsone_post->ID] = apply_filters('the_title', get_the_title($petsone_post));
         endforeach;
     endif;
-    return $pawsh_elementor_posts;
+    return $petsone_elementor_posts;
 }
 
 // Add support for featured image
@@ -286,7 +286,7 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_t
  */
 
 
-function pawsh_get_elementor_header_templates()
+function petsone_get_elementor_header_templates()
 {	
 	$args = array(
 		'post_type' => 'elementor_library',
@@ -301,19 +301,19 @@ function pawsh_get_elementor_header_templates()
 	);
 	
 	$query = new WP_Query( $args );
-	$pawsh_header_templates = array();
+	$petsone_header_templates = array();
 	if ( $query->have_posts() ) {
-		foreach ($query->posts as $pawsh_post):
-            $pawsh_header_templates[$pawsh_post->ID] = apply_filters('the_title', get_the_title($pawsh_post));
+		foreach ($query->posts as $petsone_post):
+            $petsone_header_templates[$petsone_post->ID] = apply_filters('the_title', get_the_title($petsone_post));
         endforeach;
 	}
-	return $pawsh_header_templates;	
+	return $petsone_header_templates;	
 }
 
 // Preloader Customizer Section
 function add_preloader_customizer_section( $wp_customize ) {
     $wp_customize->add_section( 'preloader_section', array(
-        'title' => __( 'Preloader', 'pawsh' ),
+        'title' => __( 'Preloader', 'petsone' ),
         'priority' => 30,
     ) );
 
@@ -324,7 +324,7 @@ function add_preloader_customizer_section( $wp_customize ) {
 
     $wp_customize->add_control( 'show_preloader', array(
         'type' => 'checkbox',
-        'label' => __( 'Show Preloader', 'pawsh' ),
+        'label' => __( 'Show Preloader', 'petsone' ),
         'section' => 'preloader_section',
     ) );
 }
@@ -335,18 +335,18 @@ add_action( 'elementor/element/wp-page/document_settings/after_section_end', fun
 	$element->start_controls_section(
 		'section_page_settings',
 		[
-			'label' => __( 'Banner Settings', 'pawsh' ),
+			'label' => __( 'Banner Settings', 'petsone' ),
 			'tab' => \Elementor\Controls_Manager::TAB_SETTINGS,
 		]
 	);
 	$element->add_control(
 		'banner_display',
 		[
-			'label' => __( 'Hide Banner', 'pawsh' ),
+			'label' => __( 'Hide Banner', 'petsone' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
 			'default' => 'Show',
-			'label_on' => __( 'Show', 'pawsh' ),
-			'label_off' => __( 'Hide', 'pawsh' ),
+			'label_on' => __( 'Show', 'petsone' ),
+			'label_off' => __( 'Hide', 'petsone' ),
 		]
 	);
 	$element->end_controls_section();

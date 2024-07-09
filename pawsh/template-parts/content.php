@@ -4,11 +4,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pawsh
+ * @package petsone
  */
-$pawshTag = pawsh_Function('Tags');
-$pawshFunc = pawsh_Function('Functions');
-$pawsh_tg = pawsh_Function('Tags');
+$petsoneTag = petsone_Function('Tags');
+$petsoneFunc = petsone_Function('Functions');
+$petsone_tg = petsone_Function('Tags');
 
 if( is_single() ): ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('standard-postbox-details'); ?>>
@@ -27,8 +27,8 @@ if( is_single() ): ?>
 			<div class="blog-item-info">
 				<h3><?php the_title(); ?></h3>
 				<ul class="post-meta">
-					<li class="post-author"><?php $pawsh_tg->posted_by(); ?></li>
-					<li class="post-date"><?php $pawsh_tg->posted_on(); ?></li>
+					<li class="post-author"><?php $petsone_tg->posted_by(); ?></li>
+					<li class="post-date"><?php $petsone_tg->posted_on(); ?></li>
 				</ul>
 			</div>
 
@@ -46,7 +46,7 @@ if( is_single() ): ?>
 					the_content( sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'pawsh' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'petsone' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -56,14 +56,14 @@ if( is_single() ): ?>
 						get_the_title()
 					) );
 					
-					$pawshFunc->link_pages(); 
+					$petsoneFunc->link_pages(); 
 				?>
 			 </div>
 
 			 <?php 
 			 if( has_tag() ) : ?>
 				<div class="blog-details_bottom">
-					<?php $pawsh_tg->tags(); ?>
+					<?php $petsone_tg->tags(); ?>
 				</div>
 			<?php 
 			endif; ?>
@@ -84,7 +84,7 @@ else: ?>
 			if ( has_post_thumbnail() ) : ?>
 				 <div class="thumb">
 					<a href="<?php the_permalink( ); ?>">
-						<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'pawsh-main-blog')?>" alt="<?php the_title(); ?>">
+						<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'petsone-main-blog')?>" alt="<?php the_title(); ?>">
 					</a>
 				</div>
 			<?php 
@@ -98,12 +98,12 @@ else: ?>
 				<?php 
 				endif; ?>
 
-				<span><i class="fa fa-user"></i><?php $pawshTag->posted_by(); ?></span>
-                <span><i class="fa fa-clock-o"></i><?php $pawshTag->posted_on(); ?></span>
+				<span><i class="fa fa-user"></i><?php $petsoneTag->posted_by(); ?></span>
+                <span><i class="fa fa-clock-o"></i><?php $petsoneTag->posted_on(); ?></span>
                 <?php the_excerpt(); ?>
 
 				<div class="blog-btn">
-				    <a class="read-more-btn" href="<?php esc_url( the_permalink() );?>"><?php esc_html_e("Read More", "pawsh");?><i class="fa fa-long-arrow-right"></i></a>
+				    <a class="read-more-btn" href="<?php esc_url( the_permalink() );?>"><?php esc_html_e("Read More", "petsone");?><i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>

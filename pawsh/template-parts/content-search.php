@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Pawsh
+ * @package Petsone
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -17,6 +17,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php //pawsh_entry_footer(); ?>
+		<?php //petsone_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

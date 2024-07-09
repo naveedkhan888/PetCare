@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Pawsh
+ * @package Petsone
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -13,7 +13,7 @@
 		the_content();
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pawsh' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'petsone' ),
 				'after'  => '</div>',
 			)
 		);

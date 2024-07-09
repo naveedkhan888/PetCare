@@ -1,4 +1,4 @@
-=== Pawsh ===
+=== Petsone ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Pawsh.
+A starter theme called Petsone.
 
 == Description ==
 
@@ -26,7 +26,7 @@ Insurance WordPress Theme
 
 = Does this theme support any plugins? =
 
-Pawsh includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Petsone includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

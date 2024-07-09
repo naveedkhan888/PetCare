@@ -2,13 +2,13 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package pawsh
+ * @package petsone
  * @param array $classes Classes for the body element.
  * @return array
 */
 
-if(!class_exists('Pawsh_Functions')){
-	class Pawsh_Functions{
+if(!class_exists('Petsone_Functions')){
+	class Petsone_Functions{
 		private static $instance;
 
 		public function __construct() {
@@ -46,7 +46,7 @@ if(!class_exists('Pawsh_Functions')){
 
         public function link_pages(){
             $defaults = array(
-                'before' => '<div class="wp-link-pages"><span>'.esc_html__('Pages:' ,'pawsh').'</span>',
+                'before' => '<div class="wp-link-pages"><span>'.esc_html__('Pages:' ,'petsone').'</span>',
                 'after' => '</div>',
                 'link_before' => '',
                 'link_after' => '',
@@ -70,11 +70,11 @@ if(!class_exists('Pawsh_Functions')){
 function ocdi_import_files() {
     return array(
         array(
-            'import_file_name' => 'Pawsh',
+            'import_file_name' => 'Petsone',
             'categories' => array() ,
-            'local_import_file'          => trailingslashit(get_template_directory()).'/demo/pawsh-demo-content.xml',
+            'local_import_file'          => trailingslashit(get_template_directory()).'/demo/petsone-demo-content.xml',
             'local_import_widget_file'   => trailingslashit(get_template_directory()).'/demo/site-settings.json',
-            'local_import_customizer_file' => trailingslashit(get_template_directory()).'/demo/pawshcustomizer.dat',         
+            'local_import_customizer_file' => trailingslashit(get_template_directory()).'/demo/petsonecustomizer.dat',         
             'import_preview_image_url'   => get_template_directory_uri().'/demo/screenshot.png',
         ),                
     );
