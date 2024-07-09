@@ -2020,15 +2020,16 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      margin-left: 0;
      line-height: 22px;
      font-size: 15px;
+     margin-right: 0;
 }
  .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li + li {
-     border-top: 1px solid var(--e-global-color-white);
+     
 }
 
  .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a {
      display: block;
      color: var(--e-global-color-eerie-black);
-     padding: 3px 0px;
+     padding: 5px 0px;
      font-size: 16px;
      font-weight: 400;
      background-color: transparent;
@@ -2139,7 +2140,11 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      bottom: 0px;
 }
  #petsone_main_menu .sub-menu li:hover a{
-    color: var(--e-global-color-primary);
+    color: var(--e-global-color-white);
+  background: var(--e-global-color-primary);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
  }
 .navbar-area.style-2 .nav-container .navbar-collapse .navbar-nav li:hover a,
 .navbar-area.style-2  .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children .sub-menu li a:hover{
