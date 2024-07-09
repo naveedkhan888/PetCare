@@ -1,0 +1,61 @@
+/*!
+Theme Name: Pawsh
+Theme URI: http://designingmedia.com/pawsh
+Author: Designing Media
+Author URI: http://designingmedia.com
+Description: Elevate your pet care business with Pawsh Theme – the ultimate solution for seamless productivity. Empower your operations with top-tier independent professionals working remotely. Streamline tasks, boost efficiency, and thrive in the digital landscape. Leverage the expertise of virtual assistants at your fingertips. Maximize success, minimize effort – Pawsh, where virtual assistance meets instant results.
+Version: 1.0
+Requires PHP: 7.0
+Tested up to: 5.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: pawsh
+Tags: Pet Care Theme, Pet Grooming, Pet Services, Responsive Design, SEO Friendly, Modern Interface, Digital Solutions, Virtual Assistants, Business Productivity, Instant Results, Task Automation, Customer Support, Time Management, Professional Services, Remote Work Solutions, Remote Support, Independent Professionals, Virtual Workspace, Global Workforce, Smart Business Solutions
+*/
+
+.no-breadcrumbs.page-title-area:after{ display: none; }
+
+.navbar-area .nav-container .navbar-collapse #menu-all-pages > li + li{ margin-left: 10px; }
+.navbar-area .nav-container .navbar-collapse #menu-all-pages li{ padding: 0 7px; }
+/*Unit test css*/
+.navbar-area .nav-container .logo a.retina-logo{
+	display: none;
+}
+.wpcf7 form.sent .wpcf7-response-output, 
+.wpcf7-not-valid-tip {
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+    margin-top: 2px;
+    position: absolute;
+    width: 445px;
+    display: block;
+    left: 0;
+    border: 0px solid #d9d9d9;
+    padding: 0px 0px 0px 0px;
+}
+.banner-inner .wpcf7 form.sent .wpcf7-response-output, 
+.banner-inner .wpcf7-not-valid-tip {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.wpcf7-spinner {
+    display: none;
+}
+.banner-inner .wpcf7 form.invalid .wpcf7-response-output, 
+.banner-inner .wpcf7 form.unaccepted .wpcf7-response-output, 
+.banner-inner .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #fff;
+    color: #fff;
+    margin-top: 0;
+}
+.wpcf7 form.invalid .wpcf7-response-output {
+    display: none;
+}
+
+
+
+
+
+
