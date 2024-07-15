@@ -322,7 +322,7 @@ class Elementor_Services_Post_Widget extends \Elementor\Widget_Base
                             } else {
                                 // User hasn't set values, display the default text and icon
                                 ?>
-                                <a href="<?php echo get_post_permalink(); ?>">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="<?php echo get_post_permalink(); ?>"><span class="new_text_read">Read More </span><i class="fa-solid fa-arrow-right"></i></a>
                                 <?php
                             }
                             ?>
