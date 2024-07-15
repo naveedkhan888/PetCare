@@ -728,6 +728,7 @@ background-color: var(--e-global-color-accent);
   line-height: 27px;
   margin-bottom: 18px;
   color: var(--e-global-color-dark-grayish-violet);
+  display: none;
 }
 .services_section .services_box .btn_wrapper a {
   font-size: 16px;
