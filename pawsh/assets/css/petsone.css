@@ -717,6 +717,8 @@ background-color: var(--e-global-color-accent);
 }
 .services_section .services_box figure img {
   width: auto;
+  height: 65px;
+  object-fit: contain;
 }
 .services_section .box1 figure {
   background-color: #fcfcfc;
