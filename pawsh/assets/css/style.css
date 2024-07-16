@@ -3478,10 +3478,10 @@ footer.footer-area.style-2 .widget.widget_nav_menu ul li a:hover {
     color: var(--e-global-color-accent);
 }
 footer.footer-area.style-3 {
-    background-color: #180A32 !important;
+    background-color: #FFBE10 !important;
     background-position: top center;
     background-repeat: no-repeat;
-    border-top: 1px solid #3a2f51 !important;
+    border-top: 1px solid #c89200 !important;
 }
 .footer-area.style-3 .footer-top {
     padding: 212px 0 20px;
@@ -3541,7 +3541,7 @@ footer.footer-area.style-3 {
      margin: 0;
      font-size: 14px;
      font-family: 'Archivo', sans-serif;
-     color: #b0a7c0;
+     color: #ffffff;
 }
  .footer-area .footer-bottom .text-lg-right .copyright:before {
      content: '';
