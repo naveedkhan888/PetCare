@@ -4637,7 +4637,7 @@ button.search-submit:hover {
      margin-bottom: 15px;
 }
  .blog-details-comment .comments-area .form-group .form-control:focus, .form-control:focus {
-     border: 1px solid var(--e-global-color-accent) !important;
+     border: 0px solid var(--e-global-color-accent) !important;
      box-shadow: none !important;
 }
  figcaption a{
