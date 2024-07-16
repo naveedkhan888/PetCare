@@ -1908,6 +1908,9 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
     width: 185px;
 	display: block;
 }
+.navbar-area .nav-container .logo a img {
+  height: 66px;
+}
  .navbar-area .nav-container .navbar-collapse .navbar-nav {
     display: block;
     width: 100%;
