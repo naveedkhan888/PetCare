@@ -3414,7 +3414,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
 }
  .page-title-area .breadcrumb .active {
     font-weight: 500;
-     color: var(--e-global-color-soft-violet);
+     color: var(--e-global-color-lime-green);
      text-transform: capitalize !important;
 }
 .breadcrumb-item + .breadcrumb-item::before {

@@ -788,8 +788,8 @@
         margin-top: 20px !important;
     }
     .services_section .owl-carousel .owl-dots .owl-dot.active span {
-        width: 14px;
-        height: 14px;
+        width: 10px;
+        height: 10px;
     }
     .services_section .owl-carousel .owl-dots .owl-dot span {
         width: 10px;
