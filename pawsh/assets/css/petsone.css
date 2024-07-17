@@ -565,7 +565,7 @@ span.cart-contents-count {
   box-shadow: 0px 7px 67px 4px rgba(251, 171, 42, 0.1);
 }
 .store_section .store_box:hover .price_cart_wrapper .cart {
-  background-color: var(--e-global-color-accent);
+  background-color: var(--e-global-color-accent) !important;
 }
 .store_section .store_box:hover .store_box_content .price_cart_wrapper .price_wrapper .dollar {
   color: var(--e-global-color-accent);
