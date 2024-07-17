@@ -419,6 +419,7 @@ span.cart-contents-count {
   transition: all 0.3s ease-in-out;
   width: 100%;
   float: left;
+  overflow: hidden;
 }
 .store_section .store_box .store_image_box {
   background: #fcfcfc;
@@ -430,7 +431,7 @@ span.cart-contents-count {
   padding: 25px;
   transition: all 0.3s ease-in-out;
 }
-.store_section .store_box .store_image_box figure img:hover {
+.store_section .store_box:hover figure img.wp-post-image {
   transform: translateY(-5px);
 }
 .store_section .store_box .store_image_box i {
@@ -451,7 +452,7 @@ span.cart-contents-count {
 }
 .store_section .store_box .store_box_content .text_rate_wrapper {
   position: relative;
-  padding: 20px 15px;
+  padding: 25px 15px;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper {
   display: inline-block;
@@ -460,12 +461,18 @@ span.cart-contents-count {
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper h5 {
   color: var(--e-global-color-primary);
-  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  margin: 0 auto 6px auto;
+  text-transform: capitalize;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper p {
   color: var(--e-global-color-dark-grayish-violet);
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .rating {
   position: absolute;
