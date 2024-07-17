@@ -1960,7 +1960,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
  .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children > a:first-child::after {
       font-size: 16px;
       font-weight: 100;
-      color: var(--e-global-color-primary) !important;
+      color: var(--e-global-color-accent) !important;
       font-family: 'fontawesome';
       -webkit-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
