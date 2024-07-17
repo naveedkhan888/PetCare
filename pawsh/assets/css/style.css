@@ -6826,6 +6826,9 @@ blockquote {
     }
 }
 @media only screen and (max-width: 991px) {
+    .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children > a:first-child::after {
+        float: right;
+    }
     .navbar-area .navbar{
         height: 85px;
     }
