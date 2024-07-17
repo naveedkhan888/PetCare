@@ -446,19 +446,24 @@ span.cart-contents-count {
   border: 1px solid var(--e-global-color-3922a79); 
 }
 
-.store_section .nav-tabs li:nth-child(5n+1) a.active {
+.store_section .nav-tabs li:nth-child(5n+1) a.active, 
+.store_section .nav-tabs li:nth-child(5n+1) a.hover {
   background-color: var(--e-global-color-accent); 
 }
-.store_section .nav-tabs li:nth-child(5n+2) a.active {
+.store_section .nav-tabs li:nth-child(5n+2) a.active, 
+.store_section .nav-tabs li:nth-child(5n+2) a.hover {
   background-color: var(--e-global-color-7a8f1e0); 
 }
-.store_section .nav-tabs li:nth-child(5n+3) a.active {
+.store_section .nav-tabs li:nth-child(5n+3) a.active, 
+.store_section .nav-tabs li:nth-child(5n+3) a.hover {
   background-color: var(--e-global-color-5d4237e); 
 }
-.store_section .nav-tabs li:nth-child(5n+4) a.active {
+.store_section .nav-tabs li:nth-child(5n+4) a.active, 
+.store_section .nav-tabs li:nth-child(5n+4) a.hover {
   background-color: var(--e-global-color-9980a93); 
 }
-.store_section .nav-tabs li:nth-child(5n+5) a.active {
+.store_section .nav-tabs li:nth-child(5n+5) a.active, 
+.store_section .nav-tabs li:nth-child(5n+5) a.hover {
   background-color: var(--e-global-color-3922a79); 
 }
 
