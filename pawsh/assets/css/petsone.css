@@ -410,7 +410,7 @@ span.cart-contents-count {
 }
 .store_section .store_box {
   background: var(--e-global-color-white);
-  padding: 10px 10px 25px;
+  padding: 0;
   border-radius: 20px;
   box-shadow: 0px 7px 67px 4px rgba(0, 0, 0, 0.03);
   z-index: 1;
@@ -447,19 +447,20 @@ span.cart-contents-count {
   left: 10px;
 }
 .store_section .store_box .store_box_content {
-  padding: 16px 8px 0 12px;
+  padding: 0;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper {
   position: relative;
+  padding: 20px 15px;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper {
   display: inline-block;
-  width: 62%;
+  width: 100%;
+  text-align: center;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper h5 {
   color: var(--e-global-color-primary);
   margin-bottom: 2px;
-  height: 50px !important;
 }
 .store_section .store_box .store_box_content .text_rate_wrapper .text_wrapper p {
   color: var(--e-global-color-dark-grayish-violet);
@@ -484,9 +485,16 @@ span.cart-contents-count {
 }
 .store_section .store_box .store_box_content .price_cart_wrapper {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border-top: 1px dashed #ccc;
 }
 .store_section .store_box .store_box_content .price_cart_wrapper .price_wrapper {
   display: inline-block;
+  margin: 2px 0 0 0;
+  padding: 0 0 0 20px;
 }
 .store_section .store_box .store_box_content .price_cart_wrapper .price_wrapper span {
   font-size: 24px;
@@ -499,19 +507,16 @@ span.cart-contents-count {
   font-size: 22px;
   line-height: 26px;
   font-weight: 700;
-  color: var(--e-global-color-primary);
+  color: var(--e-global-color-accent);
 }
 .store_section .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-primary);
-  border-radius: 100px;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
+  border-radius: 0;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
   text-align: center;
-  position: absolute;
-  top: -15px;
-  right: 0;
-  padding: 14px 12px 10px 12px;
+  padding: 15px 15px;
   transition: all 0.3s ease-in-out;
 }
 .store_section .store_box:hover {
