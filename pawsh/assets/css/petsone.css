@@ -328,10 +328,7 @@ span.cart-contents-count {
   color: var(--e-global-color-dark-grayish-violet);
 }
 .consultation_content .calender {
-  -webkit-appearance: none;
-  background-repeat: no-repeat !important;
-  background-position: 88% 16px !important;
-  background-image: url('../img/calender.png') !important;
+
 }
 .consultation_content .clock {
   -webkit-appearance: none;
