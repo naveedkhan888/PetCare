@@ -414,19 +414,19 @@ span.cart-contents-count {
   color: var(--e-global-color-3922a79); 
 }
 
-.owl-item:nth-child(5n+1) .store_box .store_box .store_box_content .price_cart_wrapper .cart {
+.owl-item:nth-child(5n+1) .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-accent); 
 }
-.owl-item:nth-child(5n+2) .store_box .store_box .store_box_content .price_cart_wrapper .cart {
+.owl-item:nth-child(5n+2) .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-7a8f1e0); 
 }
-.owl-item:nth-child(5n+3) .store_box .store_box .store_box_content .price_cart_wrapper .cart {
+.owl-item:nth-child(5n+3) .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-5d4237e); 
 }
-.owl-item:nth-child(5n+4) .store_box .store_box .store_box_content .price_cart_wrapper .cart {
+.owl-item:nth-child(5n+4) .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-9980a93); 
 }
-.owl-item:nth-child(5n+5) .store_box .store_box .store_box_content .price_cart_wrapper .cart {
+.owl-item:nth-child(5n+5) .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-3922a79); 
 }
 
@@ -548,6 +548,7 @@ span.cart-contents-count {
   line-height: 26px;
   font-weight: 700;
   color: var(--e-global-color-accent);
+  transition: all 0.3s ease-in-out;
 }
 .store_section .store_box .store_box_content .price_cart_wrapper .cart {
   background-color: var(--e-global-color-primary);
