@@ -1957,30 +1957,18 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      z-index: 0;
      margin-right: 15px;
 }
- .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::before {
-    position: absolute;
-    font-size: 16px;
-    font-weight: 100;
-    color: var(--e-global-color-primary) !important;
-    right: -7px;
-    top: 50%;
-     content: '';
-     font-family: 'fontawesome';
-     -webkit-transform: translateY(-50%);
-     -ms-transform: translateY(-50%);
-     transform: translateY(-50%);
-     -webkit-transition: all 0.3s ease-in;
-     -o-transition: all 0.3s ease-in;
-     transition: all 0.3s ease-in;
-    opacity: 1;
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent;
+ .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::after {
+      font-size: 16px;
+      font-weight: 100;
+      color: var(--e-global-color-primary) !important;
+      font-family: 'fontawesome';
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      opacity: 1;
+      display: inline-block;
+      margin-left: 10px;
+      content: "\f078";
 }
 
  .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:hover {
@@ -6955,7 +6943,7 @@ blockquote {
         display: inline-flex;
    }
     .navbar .nav-container .navbar-collapse .navbar-nav > li > a {
-        line-height: 28px;
+        line-height: 38px;
    }
     .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:hover:before {
         color: var(--e-global-color-white);
@@ -6983,7 +6971,7 @@ blockquote {
     }
     .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::before {
     right: 0px;
-    top: 25px;
+    top: 20px;
     }
     
     .nav-style-01 .nav-right-part ul li.search {

@@ -303,8 +303,7 @@
     }
     .services_section .services_box .btn_wrapper i {
         font-size: 16px;
-        line-height: 16px;
-        margin-left: 10px;
+        margin-left: 0;
     }
     .services_section .owl-carousel .owl-dots {
         margin-top: 30px !important;
