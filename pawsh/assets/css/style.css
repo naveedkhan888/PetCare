@@ -6426,11 +6426,11 @@ a.btn.nav-link{
 .search-img{
     filter: brightness(0);
     width: 20px;
-    height: 19px;
+    height: 20px;
 }
 .search-form-header img{
     width: 20px;
-    height: 19px;
+    height: 20px;
 }
 .woocommerce-page .right-side{
     display: none;
@@ -6575,7 +6575,7 @@ body .expand_close #petsone_main_menu.show {
 
 .nav-link img{
     filter: brightness(0);
-    width: 20px;
+    width: 24px;
     height: 24px;
 }
 

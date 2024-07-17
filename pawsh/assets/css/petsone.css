@@ -526,11 +526,14 @@ span.cart-contents-count {
 }
 .store_section .nav-tabs {
   border-bottom: 0px solid var(--e-global-color-white);
-  padding: 0 140px 0 187px;
+  padding: 0;
   margin-bottom: 55px;
+  text-align: center;
+  display: block;
 }
 .store_section .nav-tabs li {
-  margin-right: 2px;
+  margin-right: 10px;
+  display: inline-block;
 }
 .store_section .nav-tabs li:last-child {
   margin-right: 0;
