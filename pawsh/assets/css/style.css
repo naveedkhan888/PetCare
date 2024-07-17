@@ -1909,7 +1909,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
 	display: block;
 }
 .navbar-area .nav-container .logo a img {
-  height: 66px;
+  height: 42px;
 }
  .navbar-area .nav-container .navbar-collapse .navbar-nav {
     display: block;
@@ -7203,7 +7203,7 @@ blockquote {
         top: -19px;
        }
        .logo img{
-        max-width: 130px !important;
+        
        }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7264,7 +7264,7 @@ blockquote {
         left: calc(100% - 190px);
    }
     .logo img {
-        max-width: 80px;
+       
    }
    .toggle-btn {
     top: -18px;
