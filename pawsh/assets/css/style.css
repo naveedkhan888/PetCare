@@ -1957,20 +1957,7 @@ li.topbar-single-info a:hover, ul.topbar-left li:hover {
      z-index: 0;
      margin-right: 15px;
 }
- .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::after {
-      font-size: 16px;
-      font-weight: 100;
-      color: var(--e-global-color-primary) !important;
-      font-family: 'fontawesome';
-      -webkit-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in;
-      opacity: 1;
-      display: inline-block;
-      margin-left: 10px;
-      content: "\f078";
-}
-.navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::before {
+ .navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children > a:first-child::after {
       font-size: 16px;
       font-weight: 100;
       color: var(--e-global-color-primary) !important;
